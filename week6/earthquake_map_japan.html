@@ -1,0 +1,2615 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_66fe39fd9e956b8da075b2eff01fb156 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_66fe39fd9e956b8da075b2eff01fb156" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_66fe39fd9e956b8da075b2eff01fb156 = L.map(
+                "map_66fe39fd9e956b8da075b2eff01fb156",
+                {
+                    center: [36.0, 139.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e85dfcb384b70d445510260f01717449 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e85dfcb384b70d445510260f01717449.addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+            var circle_marker_480a47e4b8627a8ce509cddac8354d7e = L.circleMarker(
+                [39.2352, 143.4678],
+                {"bubblingMouseEvents": true, "color": "#fff900ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_e8f4520c10e199fcc0f22d7ce17fa21b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5cb9c3004ae50dd1c79bbfb8da10d8a8 = $(`<div id="html_5cb9c3004ae50dd1c79bbfb8da10d8a8" style="width: 100.0%; height: 100.0%;"><b>133 km ESE of Yamada, Japan</b><br>Magnitude: 5.0<br>Depth: 10.0 km<br>Time: 2025-11-19T02:23:19.189Z</div>`)[0];
+                popup_e8f4520c10e199fcc0f22d7ce17fa21b.setContent(html_5cb9c3004ae50dd1c79bbfb8da10d8a8);
+            
+        
+
+        circle_marker_480a47e4b8627a8ce509cddac8354d7e.bindPopup(popup_e8f4520c10e199fcc0f22d7ce17fa21b)
+        ;
+
+        
+    
+    
+            var circle_marker_4fd3020213a7de8efd2c49e7590f483e = L.circleMarker(
+                [40.9125, 142.6233],
+                {"bubblingMouseEvents": true, "color": "#dbed00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dbed00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.824, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_803b199f37d643ba818ffebbc4316fd6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fbcb4ebc645b523b3a5ea40e7e55d386 = $(`<div id="html_fbcb4ebc645b523b3a5ea40e7e55d386" style="width: 100.0%; height: 100.0%;"><b>105 km ENE of Hachinohe, Japan</b><br>Magnitude: 4.8<br>Depth: 45.026 km<br>Time: 2025-11-18T08:21:21.706Z</div>`)[0];
+                popup_803b199f37d643ba818ffebbc4316fd6.setContent(html_fbcb4ebc645b523b3a5ea40e7e55d386);
+            
+        
+
+        circle_marker_4fd3020213a7de8efd2c49e7590f483e.bindPopup(popup_803b199f37d643ba818ffebbc4316fd6)
+        ;
+
+        
+    
+    
+            var circle_marker_406d5c69f08654db28606910e51a6449 = L.circleMarker(
+                [39.3231, 142.4373],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_517e9690ac5f2af8e3ec9142e5163a52 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a505c8ca290e86cc22b7975b3a11ac9 = $(`<div id="html_5a505c8ca290e86cc22b7975b3a11ac9" style="width: 100.0%; height: 100.0%;"><b>44 km ESE of Yamada, Japan</b><br>Magnitude: 4.5<br>Depth: 49.641 km<br>Time: 2025-11-18T02:05:52.928Z</div>`)[0];
+                popup_517e9690ac5f2af8e3ec9142e5163a52.setContent(html_5a505c8ca290e86cc22b7975b3a11ac9);
+            
+        
+
+        circle_marker_406d5c69f08654db28606910e51a6449.bindPopup(popup_517e9690ac5f2af8e3ec9142e5163a52)
+        ;
+
+        
+    
+    
+            var circle_marker_cd7ad24d947a2bcf254f3a19fa8341a7 = L.circleMarker(
+                [39.7568, 143.1957],
+                {"bubblingMouseEvents": true, "color": "#ffe600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.224, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_40eeb11cff71da36decabd0aacaa0e36 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_340e3aa97f34d26ea874f36df3b54c64 = $(`<div id="html_340e3aa97f34d26ea874f36df3b54c64" style="width: 100.0%; height: 100.0%;"><b>108 km E of Miyako, Japan</b><br>Magnitude: 5.2<br>Depth: 33.331 km<br>Time: 2025-11-17T19:06:35.519Z</div>`)[0];
+                popup_40eeb11cff71da36decabd0aacaa0e36.setContent(html_340e3aa97f34d26ea874f36df3b54c64);
+            
+        
+
+        circle_marker_cd7ad24d947a2bcf254f3a19fa8341a7.bindPopup(popup_40eeb11cff71da36decabd0aacaa0e36)
+        ;
+
+        
+    
+    
+            var circle_marker_7a14254b750521ce525f722740529354 = L.circleMarker(
+                [39.6051, 143.5732],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_79f2407444737d12412612b12277bad6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e5779d9842eb29bb44b84f8c7194e86 = $(`<div id="html_7e5779d9842eb29bb44b84f8c7194e86" style="width: 100.0%; height: 100.0%;"><b>140 km E of Miyako, Japan</b><br>Magnitude: 4.5<br>Depth: 10.0 km<br>Time: 2025-11-16T13:19:32.959Z</div>`)[0];
+                popup_79f2407444737d12412612b12277bad6.setContent(html_7e5779d9842eb29bb44b84f8c7194e86);
+            
+        
+
+        circle_marker_7a14254b750521ce525f722740529354.bindPopup(popup_79f2407444737d12412612b12277bad6)
+        ;
+
+        
+    
+    
+            var circle_marker_a9aef9ec92b8a9307aecbe72c48aa073 = L.circleMarker(
+                [36.2129, 136.9821],
+                {"bubblingMouseEvents": true, "color": "#52a900ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#52a900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.094, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_277eb6a8c78bdaad51030c44e82f0d6e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5cf77ebbaedb8c66a2f1f717244566f2 = $(`<div id="html_5cf77ebbaedb8c66a2f1f717244566f2" style="width: 100.0%; height: 100.0%;"><b>25 km WNW of Takayama, Japan</b><br>Magnitude: 4.3<br>Depth: 262.77 km<br>Time: 2025-11-15T18:50:51.606Z</div>`)[0];
+                popup_277eb6a8c78bdaad51030c44e82f0d6e.setContent(html_5cf77ebbaedb8c66a2f1f717244566f2);
+            
+        
+
+        circle_marker_a9aef9ec92b8a9307aecbe72c48aa073.bindPopup(popup_277eb6a8c78bdaad51030c44e82f0d6e)
+        ;
+
+        
+    
+    
+            var circle_marker_eed5097fc1ab84cb41a79339bc575238 = L.circleMarker(
+                [39.7006, 143.1899],
+                {"bubblingMouseEvents": true, "color": "#bfe000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bfe000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.254000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_4b4d0ebef04aa3028512e2df567ea0dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_88433cfa42650ac1c40a48b9b2481123 = $(`<div id="html_88433cfa42650ac1c40a48b9b2481123" style="width: 100.0%; height: 100.0%;"><b>107 km E of Miyako, Japan</b><br>Magnitude: 4.7<br>Depth: 25.681 km<br>Time: 2025-11-15T18:06:22.756Z</div>`)[0];
+                popup_4b4d0ebef04aa3028512e2df567ea0dd.setContent(html_88433cfa42650ac1c40a48b9b2481123);
+            
+        
+
+        circle_marker_eed5097fc1ab84cb41a79339bc575238.bindPopup(popup_4b4d0ebef04aa3028512e2df567ea0dd)
+        ;
+
+        
+    
+    
+            var circle_marker_db1c4eba00a4fe8f3d2f9d468bff2e4e = L.circleMarker(
+                [45.4818, 150.8097],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_67a6747fcd70bce43a2198c4946fcb4b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb202cabe0c010ade9d9b389a9bb776f = $(`<div id="html_bb202cabe0c010ade9d9b389a9bb776f" style="width: 100.0%; height: 100.0%;"><b>231 km E of Kuril’sk, Russia</b><br>Magnitude: 4.5<br>Depth: 47.946 km<br>Time: 2025-11-15T13:31:45.230Z</div>`)[0];
+                popup_67a6747fcd70bce43a2198c4946fcb4b.setContent(html_bb202cabe0c010ade9d9b389a9bb776f);
+            
+        
+
+        circle_marker_db1c4eba00a4fe8f3d2f9d468bff2e4e.bindPopup(popup_67a6747fcd70bce43a2198c4946fcb4b)
+        ;
+
+        
+    
+    
+            var circle_marker_12d06a3a49bd6adf5282fb485731453b = L.circleMarker(
+                [24.8273, 122.1276],
+                {"bubblingMouseEvents": true, "color": "#bfe000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bfe000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.254000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_8663cb2dbebc3e70ae88ecb9885a2a00 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1a42fd3cbf576d3d5312b104cbe295ce = $(`<div id="html_1a42fd3cbf576d3d5312b104cbe295ce" style="width: 100.0%; height: 100.0%;"><b>38 km ENE of Yilan, Taiwan</b><br>Magnitude: 4.7<br>Depth: 9.932 km<br>Time: 2025-11-14T23:56:26.028Z</div>`)[0];
+                popup_8663cb2dbebc3e70ae88ecb9885a2a00.setContent(html_1a42fd3cbf576d3d5312b104cbe295ce);
+            
+        
+
+        circle_marker_12d06a3a49bd6adf5282fb485731453b.bindPopup(popup_8663cb2dbebc3e70ae88ecb9885a2a00)
+        ;
+
+        
+    
+    
+            var circle_marker_5cd89094b9dfb6ef6e59adc362bcf453 = L.circleMarker(
+                [37.3022, 141.9915],
+                {"bubblingMouseEvents": true, "color": "#bfe000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bfe000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.254000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_c1144510ea7660538df94d4a5f544fc7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d02204f2ff2ec6240373c269fb26356 = $(`<div id="html_3d02204f2ff2ec6240373c269fb26356" style="width: 100.0%; height: 100.0%;"><b>86 km E of Tomioka, Japan</b><br>Magnitude: 4.7<br>Depth: 22.056 km<br>Time: 2025-11-14T17:34:53.745Z</div>`)[0];
+                popup_c1144510ea7660538df94d4a5f544fc7.setContent(html_3d02204f2ff2ec6240373c269fb26356);
+            
+        
+
+        circle_marker_5cd89094b9dfb6ef6e59adc362bcf453.bindPopup(popup_c1144510ea7660538df94d4a5f544fc7)
+        ;
+
+        
+    
+    
+            var circle_marker_c9a4e0c30c75271b8a182d36d39c1e25 = L.circleMarker(
+                [37.0946, 141.8347],
+                {"bubblingMouseEvents": true, "color": "#bfe000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bfe000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.254000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_90f964d0cf04385ff2b716b5c2599902 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55275228308a7ee59be5990b16dbe785 = $(`<div id="html_55275228308a7ee59be5990b16dbe785" style="width: 100.0%; height: 100.0%;"><b>77 km ESE of Tomioka, Japan</b><br>Magnitude: 4.7<br>Depth: 57.278 km<br>Time: 2025-11-14T15:01:54.083Z</div>`)[0];
+                popup_90f964d0cf04385ff2b716b5c2599902.setContent(html_55275228308a7ee59be5990b16dbe785);
+            
+        
+
+        circle_marker_c9a4e0c30c75271b8a182d36d39c1e25.bindPopup(popup_90f964d0cf04385ff2b716b5c2599902)
+        ;
+
+        
+    
+    
+            var circle_marker_c6d6cd4af2b0a9273f807085c4edaf70 = L.circleMarker(
+                [39.3021, 143.561],
+                {"bubblingMouseEvents": true, "color": "#ffdc00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffdc00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.854, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_d864f96aedc2a0709dc8718653ad999b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d5b121be0ba7cae5d5464156fa245f6 = $(`<div id="html_3d5b121be0ba7cae5d5464156fa245f6" style="width: 100.0%; height: 100.0%;"><b>139 km E of Yamada, Japan</b><br>Magnitude: 5.3<br>Depth: 10.0 km<br>Time: 2025-11-13T19:58:01.307Z</div>`)[0];
+                popup_d864f96aedc2a0709dc8718653ad999b.setContent(html_3d5b121be0ba7cae5d5464156fa245f6);
+            
+        
+
+        circle_marker_c6d6cd4af2b0a9273f807085c4edaf70.bindPopup(popup_d864f96aedc2a0709dc8718653ad999b)
+        ;
+
+        
+    
+    
+            var circle_marker_89d7a186081d1df1180cc556baca31bb = L.circleMarker(
+                [39.3296, 143.6828],
+                {"bubblingMouseEvents": true, "color": "#6db700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6db700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.616000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_f9358854eddfb7c85a91562fea31c68f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fee3399f89835c4fa13a6440c484851f = $(`<div id="html_fee3399f89835c4fa13a6440c484851f" style="width: 100.0%; height: 100.0%;"><b>150 km E of Yamada, Japan</b><br>Magnitude: 4.4<br>Depth: 31.373 km<br>Time: 2025-11-13T07:57:38.358Z</div>`)[0];
+                popup_f9358854eddfb7c85a91562fea31c68f.setContent(html_fee3399f89835c4fa13a6440c484851f);
+            
+        
+
+        circle_marker_89d7a186081d1df1180cc556baca31bb.bindPopup(popup_f9358854eddfb7c85a91562fea31c68f)
+        ;
+
+        
+    
+    
+            var circle_marker_2a1802dffaa63aa1b3a6a7147874d31e = L.circleMarker(
+                [39.6503, 143.1601],
+                {"bubblingMouseEvents": true, "color": "#a4d200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a4d200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.695999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_c5a85cc5ab72d7d1fa11cb41e011fc8e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b9f8c9e5b7ce830727dd84ca82c72a5 = $(`<div id="html_5b9f8c9e5b7ce830727dd84ca82c72a5" style="width: 100.0%; height: 100.0%;"><b>104 km E of Miyako, Japan</b><br>Magnitude: 4.6<br>Depth: 30.524 km<br>Time: 2025-11-13T07:22:52.211Z</div>`)[0];
+                popup_c5a85cc5ab72d7d1fa11cb41e011fc8e.setContent(html_5b9f8c9e5b7ce830727dd84ca82c72a5);
+            
+        
+
+        circle_marker_2a1802dffaa63aa1b3a6a7147874d31e.bindPopup(popup_c5a85cc5ab72d7d1fa11cb41e011fc8e)
+        ;
+
+        
+    
+    
+            var circle_marker_5caa4d794be578e8621e6ebcc01c216e = L.circleMarker(
+                [25.1006, 124.4233],
+                {"bubblingMouseEvents": true, "color": "#bfe000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bfe000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.254000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_6ed08583c93a3157c36643c14477e304 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e7eb7991e6c845950c688f3d23935a89 = $(`<div id="html_e7eb7991e6c845950c688f3d23935a89" style="width: 100.0%; height: 100.0%;"><b>55 km NNW of Tarama, Japan</b><br>Magnitude: 4.7<br>Depth: 103.795 km<br>Time: 2025-11-13T03:24:31.233Z</div>`)[0];
+                popup_6ed08583c93a3157c36643c14477e304.setContent(html_e7eb7991e6c845950c688f3d23935a89);
+            
+        
+
+        circle_marker_5caa4d794be578e8621e6ebcc01c216e.bindPopup(popup_6ed08583c93a3157c36643c14477e304)
+        ;
+
+        
+    
+    
+            var circle_marker_c2c9947e2b67507760723858d6b43e27 = L.circleMarker(
+                [36.2717, 141.6299],
+                {"bubblingMouseEvents": true, "color": "#bfe000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bfe000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.254000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_d4bf248154581439d707025c77c39416 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_87c79265274123150c9ecb9df9e639c1 = $(`<div id="html_87c79265274123150c9ecb9df9e639c1" style="width: 100.0%; height: 100.0%;"><b>93 km NE of Hasaki, Japan</b><br>Magnitude: 4.7<br>Depth: 29.592 km<br>Time: 2025-11-13T00:54:37.056Z</div>`)[0];
+                popup_d4bf248154581439d707025c77c39416.setContent(html_87c79265274123150c9ecb9df9e639c1);
+            
+        
+
+        circle_marker_c2c9947e2b67507760723858d6b43e27.bindPopup(popup_d4bf248154581439d707025c77c39416)
+        ;
+
+        
+    
+    
+            var circle_marker_8d8e34bfdccb8a4521bcb57247c83487 = L.circleMarker(
+                [39.414, 143.4122],
+                {"bubblingMouseEvents": true, "color": "#a4d200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a4d200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.695999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_4ac73551f57b4146c20aeec44b33fe32 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6104e1c7a040866a84c58cec6eb3cb0 = $(`<div id="html_c6104e1c7a040866a84c58cec6eb3cb0" style="width: 100.0%; height: 100.0%;"><b>126 km E of Yamada, Japan</b><br>Magnitude: 4.6<br>Depth: 10.0 km<br>Time: 2025-11-12T19:08:54.018Z</div>`)[0];
+                popup_4ac73551f57b4146c20aeec44b33fe32.setContent(html_c6104e1c7a040866a84c58cec6eb3cb0);
+            
+        
+
+        circle_marker_8d8e34bfdccb8a4521bcb57247c83487.bindPopup(popup_4ac73551f57b4146c20aeec44b33fe32)
+        ;
+
+        
+    
+    
+            var circle_marker_65ccacd1029e193f548791e45b070cf9 = L.circleMarker(
+                [39.7189, 143.6084],
+                {"bubblingMouseEvents": true, "color": "#f6fb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f6fb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.406000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_e34c35f337e422a23a055bf37d637aa2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d49ba894d4ef716a8089da445b11ac7 = $(`<div id="html_6d49ba894d4ef716a8089da445b11ac7" style="width: 100.0%; height: 100.0%;"><b>143 km E of Miyako, Japan</b><br>Magnitude: 4.9<br>Depth: 10.0 km<br>Time: 2025-11-12T03:57:39.128Z</div>`)[0];
+                popup_e34c35f337e422a23a055bf37d637aa2.setContent(html_6d49ba894d4ef716a8089da445b11ac7);
+            
+        
+
+        circle_marker_65ccacd1029e193f548791e45b070cf9.bindPopup(popup_e34c35f337e422a23a055bf37d637aa2)
+        ;
+
+        
+    
+    
+            var circle_marker_687b56e9d82d2ec4a496318d1ea7b7db = L.circleMarker(
+                [39.8005, 143.2201],
+                {"bubblingMouseEvents": true, "color": "#ffd200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.496000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_1077a75075392a47ea43557bf4dd3dc1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b69046ef0bf7edf3029bd3cc3801e1c8 = $(`<div id="html_b69046ef0bf7edf3029bd3cc3801e1c8" style="width: 100.0%; height: 100.0%;"><b>111 km E of Miyako, Japan</b><br>Magnitude: 5.4<br>Depth: 35.0 km<br>Time: 2025-11-12T00:29:22.826Z</div>`)[0];
+                popup_1077a75075392a47ea43557bf4dd3dc1.setContent(html_b69046ef0bf7edf3029bd3cc3801e1c8);
+            
+        
+
+        circle_marker_687b56e9d82d2ec4a496318d1ea7b7db.bindPopup(popup_1077a75075392a47ea43557bf4dd3dc1)
+        ;
+
+        
+    
+    
+            var circle_marker_72ebc83a3d98ff079a6ab2dc0bb0e5b5 = L.circleMarker(
+                [39.5501, 143.1805],
+                {"bubblingMouseEvents": true, "color": "#a4d200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a4d200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.695999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_7f960d50186f3beec615f0a32adc3f2c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae569017292323544e71529212760781 = $(`<div id="html_ae569017292323544e71529212760781" style="width: 100.0%; height: 100.0%;"><b>106 km E of Yamada, Japan</b><br>Magnitude: 4.6<br>Depth: 31.707 km<br>Time: 2025-11-11T12:03:08.148Z</div>`)[0];
+                popup_7f960d50186f3beec615f0a32adc3f2c.setContent(html_ae569017292323544e71529212760781);
+            
+        
+
+        circle_marker_72ebc83a3d98ff079a6ab2dc0bb0e5b5.bindPopup(popup_7f960d50186f3beec615f0a32adc3f2c)
+        ;
+
+        
+    
+    
+            var circle_marker_031b9728d98973a9aa169ef42ef7c838 = L.circleMarker(
+                [39.316, 143.6746],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_dd88ae7adb53ffd7768bf8d023839493 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_311d241eba559ee3ffe3d9e11423353c = $(`<div id="html_311d241eba559ee3ffe3d9e11423353c" style="width: 100.0%; height: 100.0%;"><b>149 km E of Yamada, Japan</b><br>Magnitude: 4.5<br>Depth: 10.0 km<br>Time: 2025-11-10T20:44:13.959Z</div>`)[0];
+                popup_dd88ae7adb53ffd7768bf8d023839493.setContent(html_311d241eba559ee3ffe3d9e11423353c);
+            
+        
+
+        circle_marker_031b9728d98973a9aa169ef42ef7c838.bindPopup(popup_dd88ae7adb53ffd7768bf8d023839493)
+        ;
+
+        
+    
+    
+            var circle_marker_b1a1572a36939bb5bcfc2f9980714748 = L.circleMarker(
+                [26.6744, 130.2387],
+                {"bubblingMouseEvents": true, "color": "#f6fb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f6fb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.406000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_ac4e3b50972ceedc35b6f47de83c50b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c14c78312683ef62e034ed7af0731aa = $(`<div id="html_7c14c78312683ef62e034ed7af0731aa" style="width: 100.0%; height: 100.0%;"><b>170 km SE of Isen, Japan</b><br>Magnitude: 4.9<br>Depth: 10.0 km<br>Time: 2025-11-10T18:26:36.182Z</div>`)[0];
+                popup_ac4e3b50972ceedc35b6f47de83c50b0.setContent(html_7c14c78312683ef62e034ed7af0731aa);
+            
+        
+
+        circle_marker_b1a1572a36939bb5bcfc2f9980714748.bindPopup(popup_ac4e3b50972ceedc35b6f47de83c50b0)
+        ;
+
+        
+    
+    
+            var circle_marker_8c3847dd504b940be2f80973219ba2e7 = L.circleMarker(
+                [39.5209, 143.2075],
+                {"bubblingMouseEvents": true, "color": "#ffe600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.224, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_0cfe962544e92388a35923641b7a82fd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_238f1cb6a8bd11406f8f45721b149ff1 = $(`<div id="html_238f1cb6a8bd11406f8f45721b149ff1" style="width: 100.0%; height: 100.0%;"><b>108 km E of Yamada, Japan</b><br>Magnitude: 5.2<br>Depth: 10.0 km<br>Time: 2025-11-10T09:58:58.726Z</div>`)[0];
+                popup_0cfe962544e92388a35923641b7a82fd.setContent(html_238f1cb6a8bd11406f8f45721b149ff1);
+            
+        
+
+        circle_marker_8c3847dd504b940be2f80973219ba2e7.bindPopup(popup_0cfe962544e92388a35923641b7a82fd)
+        ;
+
+        
+    
+    
+            var circle_marker_d8a24203d3cfbc809cf7a7ea832a449a = L.circleMarker(
+                [39.5397, 143.5063],
+                {"bubblingMouseEvents": true, "color": "#bfe000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bfe000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.254000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_27b45338d68bb59587f7f1ace9016124 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_56c9178c69297e3ffb13148e62850375 = $(`<div id="html_56c9178c69297e3ffb13148e62850375" style="width: 100.0%; height: 100.0%;"><b>134 km E of Yamada, Japan</b><br>Magnitude: 4.7<br>Depth: 10.0 km<br>Time: 2025-11-10T07:42:47.279Z</div>`)[0];
+                popup_27b45338d68bb59587f7f1ace9016124.setContent(html_56c9178c69297e3ffb13148e62850375);
+            
+        
+
+        circle_marker_d8a24203d3cfbc809cf7a7ea832a449a.bindPopup(popup_27b45338d68bb59587f7f1ace9016124)
+        ;
+
+        
+    
+    
+            var circle_marker_ed5571c81008bbcac9920a4355b9000f = L.circleMarker(
+                [39.542, 143.3467],
+                {"bubblingMouseEvents": true, "color": "#ff8d00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8d00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.599999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_4c77245e363706fd3aa7c0feed11c09a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_59280e253304cc08835dc14b6dd593d8 = $(`<div id="html_59280e253304cc08835dc14b6dd593d8" style="width: 100.0%; height: 100.0%;"><b>120 km E of Yamada, Japan</b><br>Magnitude: 6.0<br>Depth: 11.158 km<br>Time: 2025-11-10T07:23:18.202Z</div>`)[0];
+                popup_4c77245e363706fd3aa7c0feed11c09a.setContent(html_59280e253304cc08835dc14b6dd593d8);
+            
+        
+
+        circle_marker_ed5571c81008bbcac9920a4355b9000f.bindPopup(popup_4c77245e363706fd3aa7c0feed11c09a)
+        ;
+
+        
+    
+    
+            var circle_marker_635fbc9717d39d8be3721c57fbfa5031 = L.circleMarker(
+                [39.5799, 143.5953],
+                {"bubblingMouseEvents": true, "color": "#ffef00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffef00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.605999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_c04d52409a5b83cc157dcce6677b4c9b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b9e3f4108f51fb3984ff8faafc61e1da = $(`<div id="html_b9e3f4108f51fb3984ff8faafc61e1da" style="width: 100.0%; height: 100.0%;"><b>142 km E of Yamada, Japan</b><br>Magnitude: 5.1<br>Depth: 10.0 km<br>Time: 2025-11-10T07:22:14.933Z</div>`)[0];
+                popup_c04d52409a5b83cc157dcce6677b4c9b.setContent(html_b9e3f4108f51fb3984ff8faafc61e1da);
+            
+        
+
+        circle_marker_635fbc9717d39d8be3721c57fbfa5031.bindPopup(popup_c04d52409a5b83cc157dcce6677b4c9b)
+        ;
+
+        
+    
+    
+            var circle_marker_3a8185aa004aade7b2b8b8f2fc5266a2 = L.circleMarker(
+                [39.3126, 143.5042],
+                {"bubblingMouseEvents": true, "color": "#dbed00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dbed00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.824, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_f1de50fbfde7f95682c1984a82b27c29 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_671c2c7922baac2058a1d57b702c5630 = $(`<div id="html_671c2c7922baac2058a1d57b702c5630" style="width: 100.0%; height: 100.0%;"><b>134 km E of Yamada, Japan</b><br>Magnitude: 4.8<br>Depth: 23.792 km<br>Time: 2025-11-10T06:18:41.059Z</div>`)[0];
+                popup_f1de50fbfde7f95682c1984a82b27c29.setContent(html_671c2c7922baac2058a1d57b702c5630);
+            
+        
+
+        circle_marker_3a8185aa004aade7b2b8b8f2fc5266a2.bindPopup(popup_f1de50fbfde7f95682c1984a82b27c29)
+        ;
+
+        
+    
+    
+            var circle_marker_3ba27bb80908d36dc54d7aadab4dfd3b = L.circleMarker(
+                [39.1968, 143.0791],
+                {"bubblingMouseEvents": true, "color": "#ffd200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.496000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_b4b7ad6c3e2db66148b99d35cde54567 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8f87a5de6166b69e763019b0b09d1526 = $(`<div id="html_8f87a5de6166b69e763019b0b09d1526" style="width: 100.0%; height: 100.0%;"><b>101 km ESE of Yamada, Japan</b><br>Magnitude: 5.4<br>Depth: 9.446 km<br>Time: 2025-11-10T03:00:18.358Z</div>`)[0];
+                popup_b4b7ad6c3e2db66148b99d35cde54567.setContent(html_8f87a5de6166b69e763019b0b09d1526);
+            
+        
+
+        circle_marker_3ba27bb80908d36dc54d7aadab4dfd3b.bindPopup(popup_b4b7ad6c3e2db66148b99d35cde54567)
+        ;
+
+        
+    
+    
+            var circle_marker_cf7477821aef20db1c1095f4bba0721b = L.circleMarker(
+                [39.7714, 143.4483],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_35cd89e04f694d372a0482e638ff5f15 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f4658e9ec91b7b56a41e37a9efc34728 = $(`<div id="html_f4658e9ec91b7b56a41e37a9efc34728" style="width: 100.0%; height: 100.0%;"><b>130 km E of Miyako, Japan</b><br>Magnitude: 4.5<br>Depth: 35.0 km<br>Time: 2025-11-10T01:55:15.218Z</div>`)[0];
+                popup_35cd89e04f694d372a0482e638ff5f15.setContent(html_f4658e9ec91b7b56a41e37a9efc34728);
+            
+        
+
+        circle_marker_cf7477821aef20db1c1095f4bba0721b.bindPopup(popup_35cd89e04f694d372a0482e638ff5f15)
+        ;
+
+        
+    
+    
+            var circle_marker_76de8acd97767d0516297396bc0a820e = L.circleMarker(
+                [39.2429, 143.5868],
+                {"bubblingMouseEvents": true, "color": "#ffdc00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffdc00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.854, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_85548704f640374603c95ec04a242bd4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_213f387a6017161ca0ba33c1c61c2c42 = $(`<div id="html_213f387a6017161ca0ba33c1c61c2c42" style="width: 100.0%; height: 100.0%;"><b>143 km E of Yamada, Japan</b><br>Magnitude: 5.3<br>Depth: 10.0 km<br>Time: 2025-11-10T01:20:51.267Z</div>`)[0];
+                popup_85548704f640374603c95ec04a242bd4.setContent(html_213f387a6017161ca0ba33c1c61c2c42);
+            
+        
+
+        circle_marker_76de8acd97767d0516297396bc0a820e.bindPopup(popup_85548704f640374603c95ec04a242bd4)
+        ;
+
+        
+    
+    
+            var circle_marker_91572033f328a56ecfca8996d5d28109 = L.circleMarker(
+                [39.5353, 143.1148],
+                {"bubblingMouseEvents": true, "color": "#a4d200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a4d200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.695999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_0929c1d2fdc0b716231dc8bb11634ebf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_407df9126f8054e195175b9d4abd3a21 = $(`<div id="html_407df9126f8054e195175b9d4abd3a21" style="width: 100.0%; height: 100.0%;"><b>100 km E of Yamada, Japan</b><br>Magnitude: 4.6<br>Depth: 35.0 km<br>Time: 2025-11-10T00:40:09.779Z</div>`)[0];
+                popup_0929c1d2fdc0b716231dc8bb11634ebf.setContent(html_407df9126f8054e195175b9d4abd3a21);
+            
+        
+
+        circle_marker_91572033f328a56ecfca8996d5d28109.bindPopup(popup_0929c1d2fdc0b716231dc8bb11634ebf)
+        ;
+
+        
+    
+    
+            var circle_marker_44297baeb80bc021d9de2a48190181ea = L.circleMarker(
+                [39.6859, 143.191],
+                {"bubblingMouseEvents": true, "color": "#f6fb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f6fb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.406000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_5011dd60cb43bccc4bcf9bb780fa1986 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6e6d0301cf54751c1572980dd3a6fec6 = $(`<div id="html_6e6d0301cf54751c1572980dd3a6fec6" style="width: 100.0%; height: 100.0%;"><b>107 km E of Miyako, Japan</b><br>Magnitude: 4.9<br>Depth: 35.0 km<br>Time: 2025-11-09T22:41:32.776Z</div>`)[0];
+                popup_5011dd60cb43bccc4bcf9bb780fa1986.setContent(html_6e6d0301cf54751c1572980dd3a6fec6);
+            
+        
+
+        circle_marker_44297baeb80bc021d9de2a48190181ea.bindPopup(popup_5011dd60cb43bccc4bcf9bb780fa1986)
+        ;
+
+        
+    
+    
+            var circle_marker_4267dfe519fb197f49a9f265aae17c86 = L.circleMarker(
+                [39.3695, 143.5559],
+                {"bubblingMouseEvents": true, "color": "#ffef00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffef00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.605999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_e7cd87493f4a2d9a57567411233d4167 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1a76f53db6a8ae4f5443ac5291ab818d = $(`<div id="html_1a76f53db6a8ae4f5443ac5291ab818d" style="width: 100.0%; height: 100.0%;"><b>138 km E of Yamada, Japan</b><br>Magnitude: 5.1<br>Depth: 10.0 km<br>Time: 2025-11-09T22:04:14.446Z</div>`)[0];
+                popup_e7cd87493f4a2d9a57567411233d4167.setContent(html_1a76f53db6a8ae4f5443ac5291ab818d);
+            
+        
+
+        circle_marker_4267dfe519fb197f49a9f265aae17c86.bindPopup(popup_e7cd87493f4a2d9a57567411233d4167)
+        ;
+
+        
+    
+    
+            var circle_marker_6f993cc30406258753294b5b5f625c80 = L.circleMarker(
+                [39.6152, 143.1341],
+                {"bubblingMouseEvents": true, "color": "#6db700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6db700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.616000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_c1ee30c357f8a8f41bbf5b529bf1c63d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_81ea79962a6334b2da67e5f58f902609 = $(`<div id="html_81ea79962a6334b2da67e5f58f902609" style="width: 100.0%; height: 100.0%;"><b>102 km E of Miyako, Japan</b><br>Magnitude: 4.4<br>Depth: 10.0 km<br>Time: 2025-11-09T18:28:39.021Z</div>`)[0];
+                popup_c1ee30c357f8a8f41bbf5b529bf1c63d.setContent(html_81ea79962a6334b2da67e5f58f902609);
+            
+        
+
+        circle_marker_6f993cc30406258753294b5b5f625c80.bindPopup(popup_c1ee30c357f8a8f41bbf5b529bf1c63d)
+        ;
+
+        
+    
+    
+            var circle_marker_e94594f3ca4dd03ccca0ecbe4748f67a = L.circleMarker(
+                [39.3884, 143.5588],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_062003f7e0fce74f9b7eca26d317fc89 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac435673c79ca53534a47fd7ba1e84db = $(`<div id="html_ac435673c79ca53534a47fd7ba1e84db" style="width: 100.0%; height: 100.0%;"><b>138 km E of Yamada, Japan</b><br>Magnitude: 4.5<br>Depth: 10.0 km<br>Time: 2025-11-09T16:42:27.647Z</div>`)[0];
+                popup_062003f7e0fce74f9b7eca26d317fc89.setContent(html_ac435673c79ca53534a47fd7ba1e84db);
+            
+        
+
+        circle_marker_e94594f3ca4dd03ccca0ecbe4748f67a.bindPopup(popup_062003f7e0fce74f9b7eca26d317fc89)
+        ;
+
+        
+    
+    
+            var circle_marker_e9be5d5de56fb82ffa9346c8f3626602 = L.circleMarker(
+                [39.5875, 143.4253],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_433b0cfa8ae44b71b41271f8ed35814d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bfcd491411ac09bf9a1fcc831ed4d6b6 = $(`<div id="html_bfcd491411ac09bf9a1fcc831ed4d6b6" style="width: 100.0%; height: 100.0%;"><b>127 km E of Yamada, Japan</b><br>Magnitude: 4.5<br>Depth: 10.0 km<br>Time: 2025-11-09T15:58:09.358Z</div>`)[0];
+                popup_433b0cfa8ae44b71b41271f8ed35814d.setContent(html_bfcd491411ac09bf9a1fcc831ed4d6b6);
+            
+        
+
+        circle_marker_e9be5d5de56fb82ffa9346c8f3626602.bindPopup(popup_433b0cfa8ae44b71b41271f8ed35814d)
+        ;
+
+        
+    
+    
+            var circle_marker_7c3750beb85745e513012dd85a94f51b = L.circleMarker(
+                [39.4524, 143.4472],
+                {"bubblingMouseEvents": true, "color": "#fff900ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_3fe885e2e60e459b089201c7563f9e89 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d3be2feabe12bf333b40ad68f94ed26 = $(`<div id="html_2d3be2feabe12bf333b40ad68f94ed26" style="width: 100.0%; height: 100.0%;"><b>128 km E of Yamada, Japan</b><br>Magnitude: 5.0<br>Depth: 10.0 km<br>Time: 2025-11-09T15:46:45.887Z</div>`)[0];
+                popup_3fe885e2e60e459b089201c7563f9e89.setContent(html_2d3be2feabe12bf333b40ad68f94ed26);
+            
+        
+
+        circle_marker_7c3750beb85745e513012dd85a94f51b.bindPopup(popup_3fe885e2e60e459b089201c7563f9e89)
+        ;
+
+        
+    
+    
+            var circle_marker_ddbc3ad27a3c08090f02e4865a609595 = L.circleMarker(
+                [39.5005, 143.2876],
+                {"bubblingMouseEvents": true, "color": "#dbed00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dbed00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.824, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_b168b90f6359d0a8e839e2f49b3a1df1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1dfc8cd12679c5a619ae41099f8aa70f = $(`<div id="html_1dfc8cd12679c5a619ae41099f8aa70f" style="width: 100.0%; height: 100.0%;"><b>115 km E of Yamada, Japan</b><br>Magnitude: 4.8<br>Depth: 10.0 km<br>Time: 2025-11-09T15:44:21.950Z</div>`)[0];
+                popup_b168b90f6359d0a8e839e2f49b3a1df1.setContent(html_1dfc8cd12679c5a619ae41099f8aa70f);
+            
+        
+
+        circle_marker_ddbc3ad27a3c08090f02e4865a609595.bindPopup(popup_b168b90f6359d0a8e839e2f49b3a1df1)
+        ;
+
+        
+    
+    
+            var circle_marker_d60c1ee5894c9b902ebf7aee8d6e20a8 = L.circleMarker(
+                [39.51, 143.5463],
+                {"bubblingMouseEvents": true, "color": "#6db700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6db700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.616000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_f7566a53c00bd0429f93428679be0e59 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba9d5ccb5a7c396007c5a40ae5eeeabb = $(`<div id="html_ba9d5ccb5a7c396007c5a40ae5eeeabb" style="width: 100.0%; height: 100.0%;"><b>137 km E of Yamada, Japan</b><br>Magnitude: 4.4<br>Depth: 10.0 km<br>Time: 2025-11-09T15:30:54.058Z</div>`)[0];
+                popup_f7566a53c00bd0429f93428679be0e59.setContent(html_ba9d5ccb5a7c396007c5a40ae5eeeabb);
+            
+        
+
+        circle_marker_d60c1ee5894c9b902ebf7aee8d6e20a8.bindPopup(popup_f7566a53c00bd0429f93428679be0e59)
+        ;
+
+        
+    
+    
+            var circle_marker_d001114e82b995c8c39261058cf7fa62 = L.circleMarker(
+                [39.5358, 143.4003],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_9a6feea9b3b7ff7c1984ac687b54386d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_83d51b9d278a29d70eeba4604f0a1c92 = $(`<div id="html_83d51b9d278a29d70eeba4604f0a1c92" style="width: 100.0%; height: 100.0%;"><b>124 km E of Yamada, Japan</b><br>Magnitude: 4.5<br>Depth: 10.0 km<br>Time: 2025-11-09T15:23:06.617Z</div>`)[0];
+                popup_9a6feea9b3b7ff7c1984ac687b54386d.setContent(html_83d51b9d278a29d70eeba4604f0a1c92);
+            
+        
+
+        circle_marker_d001114e82b995c8c39261058cf7fa62.bindPopup(popup_9a6feea9b3b7ff7c1984ac687b54386d)
+        ;
+
+        
+    
+    
+            var circle_marker_b4444d62f4429740ee3cfefa22f3edae = L.circleMarker(
+                [39.7841, 143.4274],
+                {"bubblingMouseEvents": true, "color": "#f6fb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f6fb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.406000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_aaad3ca4003bf26ca30328f3fc322fa1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_80a1181a1ceee40ff04d6a7fc8eaa683 = $(`<div id="html_80a1181a1ceee40ff04d6a7fc8eaa683" style="width: 100.0%; height: 100.0%;"><b>128 km E of Miyako, Japan</b><br>Magnitude: 4.9<br>Depth: 10.0 km<br>Time: 2025-11-09T14:41:13.572Z</div>`)[0];
+                popup_aaad3ca4003bf26ca30328f3fc322fa1.setContent(html_80a1181a1ceee40ff04d6a7fc8eaa683);
+            
+        
+
+        circle_marker_b4444d62f4429740ee3cfefa22f3edae.bindPopup(popup_aaad3ca4003bf26ca30328f3fc322fa1)
+        ;
+
+        
+    
+    
+            var circle_marker_107bc7948e00329ac8acfe4f003faab6 = L.circleMarker(
+                [39.5454, 143.3961],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_2807c60c981171450e20fc2251a57284 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_79ee2c6c9ba88e75256a4aa28a3a1848 = $(`<div id="html_79ee2c6c9ba88e75256a4aa28a3a1848" style="width: 100.0%; height: 100.0%;"><b>124 km E of Yamada, Japan</b><br>Magnitude: 4.5<br>Depth: 10.0 km<br>Time: 2025-11-09T13:50:16.566Z</div>`)[0];
+                popup_2807c60c981171450e20fc2251a57284.setContent(html_79ee2c6c9ba88e75256a4aa28a3a1848);
+            
+        
+
+        circle_marker_107bc7948e00329ac8acfe4f003faab6.bindPopup(popup_2807c60c981171450e20fc2251a57284)
+        ;
+
+        
+    
+    
+            var circle_marker_8d685b4d288c58905705313217081af0 = L.circleMarker(
+                [39.2854, 143.3178],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_57d53be3536bcf52053d5045832bc52c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9aaf75e973e85592b445c2587038bd66 = $(`<div id="html_9aaf75e973e85592b445c2587038bd66" style="width: 100.0%; height: 100.0%;"><b>119 km E of Yamada, Japan</b><br>Magnitude: 4.5<br>Depth: 10.0 km<br>Time: 2025-11-09T12:15:47.136Z</div>`)[0];
+                popup_57d53be3536bcf52053d5045832bc52c.setContent(html_9aaf75e973e85592b445c2587038bd66);
+            
+        
+
+        circle_marker_8d685b4d288c58905705313217081af0.bindPopup(popup_57d53be3536bcf52053d5045832bc52c)
+        ;
+
+        
+    
+    
+            var circle_marker_56c195767389798627848a0c6050c634 = L.circleMarker(
+                [39.3036, 143.5329],
+                {"bubblingMouseEvents": true, "color": "#ffe600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.224, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_8f9979887db665e49653479c0042c82f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ad26c47e779ebd6fadeb8a7101c0b29 = $(`<div id="html_0ad26c47e779ebd6fadeb8a7101c0b29" style="width: 100.0%; height: 100.0%;"><b>137 km E of Yamada, Japan</b><br>Magnitude: 5.2<br>Depth: 10.0 km<br>Time: 2025-11-09T11:11:25.060Z</div>`)[0];
+                popup_8f9979887db665e49653479c0042c82f.setContent(html_0ad26c47e779ebd6fadeb8a7101c0b29);
+            
+        
+
+        circle_marker_56c195767389798627848a0c6050c634.bindPopup(popup_8f9979887db665e49653479c0042c82f)
+        ;
+
+        
+    
+    
+            var circle_marker_93e41bb4534cc2302ffbb68365084edc = L.circleMarker(
+                [39.5242, 143.5096],
+                {"bubblingMouseEvents": true, "color": "#a4d200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a4d200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.695999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_8c83818b311ef638a846e0373fa49b35 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f3d13c7b1fedabfeba0eed035730b5e5 = $(`<div id="html_f3d13c7b1fedabfeba0eed035730b5e5" style="width: 100.0%; height: 100.0%;"><b>134 km E of Yamada, Japan</b><br>Magnitude: 4.6<br>Depth: 10.0 km<br>Time: 2025-11-09T10:25:03.183Z</div>`)[0];
+                popup_8c83818b311ef638a846e0373fa49b35.setContent(html_f3d13c7b1fedabfeba0eed035730b5e5);
+            
+        
+
+        circle_marker_93e41bb4534cc2302ffbb68365084edc.bindPopup(popup_8c83818b311ef638a846e0373fa49b35)
+        ;
+
+        
+    
+    
+            var circle_marker_07ec85af40d48403d9e9839386d40e5e = L.circleMarker(
+                [39.4055, 143.4215],
+                {"bubblingMouseEvents": true, "color": "#ffe600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.224, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_289d75a54d34299abeb34640a66f84b1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e74e7d46bf5bb88dfd6fedd99892ebbe = $(`<div id="html_e74e7d46bf5bb88dfd6fedd99892ebbe" style="width: 100.0%; height: 100.0%;"><b>126 km E of Yamada, Japan</b><br>Magnitude: 5.2<br>Depth: 10.0 km<br>Time: 2025-11-09T09:52:43.222Z</div>`)[0];
+                popup_289d75a54d34299abeb34640a66f84b1.setContent(html_e74e7d46bf5bb88dfd6fedd99892ebbe);
+            
+        
+
+        circle_marker_07ec85af40d48403d9e9839386d40e5e.bindPopup(popup_289d75a54d34299abeb34640a66f84b1)
+        ;
+
+        
+    
+    
+            var circle_marker_11016a9b70019eb77c2346cc7a5939d7 = L.circleMarker(
+                [39.6288, 143.5049],
+                {"bubblingMouseEvents": true, "color": "#ffb500ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffb500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.494, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_b61af7425cf294817241ca78b3dea720 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_18a1d7338de4f3c21a33cbb5992276eb = $(`<div id="html_18a1d7338de4f3c21a33cbb5992276eb" style="width: 100.0%; height: 100.0%;"><b>134 km E of Miyako, Japan</b><br>Magnitude: 5.7<br>Depth: 10.0 km<br>Time: 2025-11-09T09:28:23.919Z</div>`)[0];
+                popup_b61af7425cf294817241ca78b3dea720.setContent(html_18a1d7338de4f3c21a33cbb5992276eb);
+            
+        
+
+        circle_marker_11016a9b70019eb77c2346cc7a5939d7.bindPopup(popup_b61af7425cf294817241ca78b3dea720)
+        ;
+
+        
+    
+    
+            var circle_marker_cb0863624e6ec288c7649292a1ffec15 = L.circleMarker(
+                [39.4975, 143.4348],
+                {"bubblingMouseEvents": true, "color": "#a4d200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a4d200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.695999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_da40b52d19932a1ecc950d0def283cc9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a9315c6b525d17121e9d857099cd3c5b = $(`<div id="html_a9315c6b525d17121e9d857099cd3c5b" style="width: 100.0%; height: 100.0%;"><b>127 km E of Yamada, Japan</b><br>Magnitude: 4.6<br>Depth: 10.0 km<br>Time: 2025-11-09T09:21:35.057Z</div>`)[0];
+                popup_da40b52d19932a1ecc950d0def283cc9.setContent(html_a9315c6b525d17121e9d857099cd3c5b);
+            
+        
+
+        circle_marker_cb0863624e6ec288c7649292a1ffec15.bindPopup(popup_da40b52d19932a1ecc950d0def283cc9)
+        ;
+
+        
+    
+    
+            var circle_marker_ed6488c888018b0c30aaada8e580caee = L.circleMarker(
+                [39.3484, 143.1519],
+                {"bubblingMouseEvents": true, "color": "#fff900ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_552ef569f56d644833abaf645268a94a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b75e58919a330503f26b6109e8c0d11b = $(`<div id="html_b75e58919a330503f26b6109e8c0d11b" style="width: 100.0%; height: 100.0%;"><b>104 km E of Yamada, Japan</b><br>Magnitude: 5.0<br>Depth: 10.0 km<br>Time: 2025-11-09T09:16:58.352Z</div>`)[0];
+                popup_552ef569f56d644833abaf645268a94a.setContent(html_b75e58919a330503f26b6109e8c0d11b);
+            
+        
+
+        circle_marker_ed6488c888018b0c30aaada8e580caee.bindPopup(popup_552ef569f56d644833abaf645268a94a)
+        ;
+
+        
+    
+    
+            var circle_marker_e1911fe9d57bde64326e6cd3a5ae50ff = L.circleMarker(
+                [39.4962, 143.3802],
+                {"bubblingMouseEvents": true, "color": "#ffd200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.496000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_dddf68b2a54fad9fed891882bee4a605 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_22430d07bd29989b858703d288521561 = $(`<div id="html_22430d07bd29989b858703d288521561" style="width: 100.0%; height: 100.0%;"><b>123 km E of Yamada, Japan</b><br>Magnitude: 5.4<br>Depth: 10.0 km<br>Time: 2025-11-09T09:10:47.389Z</div>`)[0];
+                popup_dddf68b2a54fad9fed891882bee4a605.setContent(html_22430d07bd29989b858703d288521561);
+            
+        
+
+        circle_marker_e1911fe9d57bde64326e6cd3a5ae50ff.bindPopup(popup_dddf68b2a54fad9fed891882bee4a605)
+        ;
+
+        
+    
+    
+            var circle_marker_eca2b0f2bc0e151a5da2656905208b8d = L.circleMarker(
+                [39.4662, 143.3632],
+                {"bubblingMouseEvents": true, "color": "#ff4600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff4600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.576000000000004, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_48dba702227c3aa657496cc1776b9424 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6040451de662ef427320ba9aa8eca7ca = $(`<div id="html_6040451de662ef427320ba9aa8eca7ca" style="width: 100.0%; height: 100.0%;"><b>121 km E of Yamada, Japan</b><br>Magnitude: 6.4<br>Depth: 10.0 km<br>Time: 2025-11-09T08:54:36.991Z</div>`)[0];
+                popup_48dba702227c3aa657496cc1776b9424.setContent(html_6040451de662ef427320ba9aa8eca7ca);
+            
+        
+
+        circle_marker_eca2b0f2bc0e151a5da2656905208b8d.bindPopup(popup_48dba702227c3aa657496cc1776b9424)
+        ;
+
+        
+    
+    
+            var circle_marker_4a9038e8b1540845b18ca0a85557a9c6 = L.circleMarker(
+                [39.3438, 143.398],
+                {"bubblingMouseEvents": true, "color": "#ffe600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.224, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_58010c5d6b8d64aeb124d42efeeaef05 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae7f0f3f00e31f03510f9b1cf9d0b7d0 = $(`<div id="html_ae7f0f3f00e31f03510f9b1cf9d0b7d0" style="width: 100.0%; height: 100.0%;"><b>125 km E of Yamada, Japan</b><br>Magnitude: 5.2<br>Depth: 10.0 km<br>Time: 2025-11-09T08:49:50.368Z</div>`)[0];
+                popup_58010c5d6b8d64aeb124d42efeeaef05.setContent(html_ae7f0f3f00e31f03510f9b1cf9d0b7d0);
+            
+        
+
+        circle_marker_4a9038e8b1540845b18ca0a85557a9c6.bindPopup(popup_58010c5d6b8d64aeb124d42efeeaef05)
+        ;
+
+        
+    
+    
+            var circle_marker_cad7bf801ea0e6f3b427a4e052232c1b = L.circleMarker(
+                [39.4641, 143.4138],
+                {"bubblingMouseEvents": true, "color": "#ffbf00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffbf00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.815999999999995, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_bce9b27c915c5bcc4be530081b934b87 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_06422e7de1e8c228ab7ed49bb474459a = $(`<div id="html_06422e7de1e8c228ab7ed49bb474459a" style="width: 100.0%; height: 100.0%;"><b>125 km E of Yamada, Japan</b><br>Magnitude: 5.6<br>Depth: 10.0 km<br>Time: 2025-11-09T08:34:01.761Z</div>`)[0];
+                popup_bce9b27c915c5bcc4be530081b934b87.setContent(html_06422e7de1e8c228ab7ed49bb474459a);
+            
+        
+
+        circle_marker_cad7bf801ea0e6f3b427a4e052232c1b.bindPopup(popup_bce9b27c915c5bcc4be530081b934b87)
+        ;
+
+        
+    
+    
+            var circle_marker_e60cf91469004e9560ba990603701a11 = L.circleMarker(
+                [39.3606, 143.4278],
+                {"bubblingMouseEvents": true, "color": "#ff9f00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9f00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.886, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_230b3dfea60f44355cb4c1420e513429 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4db51d9a259cec8b229ec4444ce834eb = $(`<div id="html_4db51d9a259cec8b229ec4444ce834eb" style="width: 100.0%; height: 100.0%;"><b>127 km E of Yamada, Japan</b><br>Magnitude: 5.9<br>Depth: 10.0 km<br>Time: 2025-11-09T08:14:53.100Z</div>`)[0];
+                popup_230b3dfea60f44355cb4c1420e513429.setContent(html_4db51d9a259cec8b229ec4444ce834eb);
+            
+        
+
+        circle_marker_e60cf91469004e9560ba990603701a11.bindPopup(popup_230b3dfea60f44355cb4c1420e513429)
+        ;
+
+        
+    
+    
+            var circle_marker_92f00758d7d9717ac8e60cc12a19ee37 = L.circleMarker(
+                [39.5755, 143.1905],
+                {"bubblingMouseEvents": true, "color": "#ffc900ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffc900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_e4012d15c4fe6f9e5457b6269e0b6537 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1bdb113f64f3e87b7c48b0f67b3648f9 = $(`<div id="html_1bdb113f64f3e87b7c48b0f67b3648f9" style="width: 100.0%; height: 100.0%;"><b>107 km E of Yamada, Japan</b><br>Magnitude: 5.5<br>Depth: 10.0 km<br>Time: 2025-11-09T08:11:25.615Z</div>`)[0];
+                popup_e4012d15c4fe6f9e5457b6269e0b6537.setContent(html_1bdb113f64f3e87b7c48b0f67b3648f9);
+            
+        
+
+        circle_marker_92f00758d7d9717ac8e60cc12a19ee37.bindPopup(popup_e4012d15c4fe6f9e5457b6269e0b6537)
+        ;
+
+        
+    
+    
+            var circle_marker_48ed59b40220049fa0aa56326c90c4e3 = L.circleMarker(
+                [39.3957, 143.4108],
+                {"bubblingMouseEvents": true, "color": "#ff0000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.743999999999996, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_69ae04d75177c8712f142c84903278ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61d6c43d2beda618e8153f4ad3a614b4 = $(`<div id="html_61d6c43d2beda618e8153f4ad3a614b4" style="width: 100.0%; height: 100.0%;"><b>126 km E of Yamada, Japan</b><br>Magnitude: 6.8<br>Depth: 10.0 km<br>Time: 2025-11-09T08:03:37.808Z</div>`)[0];
+                popup_69ae04d75177c8712f142c84903278ec.setContent(html_61d6c43d2beda618e8153f4ad3a614b4);
+            
+        
+
+        circle_marker_48ed59b40220049fa0aa56326c90c4e3.bindPopup(popup_69ae04d75177c8712f142c84903278ec)
+        ;
+
+        
+    
+    
+            var circle_marker_c82056fc8a1b955a08dfcaa8fddede1b = L.circleMarker(
+                [39.5934, 143.2624],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_2b059b8c72bd0f0439c6acf213d516ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c3ee1e403b8652301d13d493fb91c965 = $(`<div id="html_c3ee1e403b8652301d13d493fb91c965" style="width: 100.0%; height: 100.0%;"><b>113 km E of Miyako, Japan</b><br>Magnitude: 4.5<br>Depth: 10.0 km<br>Time: 2025-11-09T07:36:20.509Z</div>`)[0];
+                popup_2b059b8c72bd0f0439c6acf213d516ca.setContent(html_c3ee1e403b8652301d13d493fb91c965);
+            
+        
+
+        circle_marker_c82056fc8a1b955a08dfcaa8fddede1b.bindPopup(popup_2b059b8c72bd0f0439c6acf213d516ca)
+        ;
+
+        
+    
+    
+            var circle_marker_fd69039166056b828f3dde7482f7b770 = L.circleMarker(
+                [42.0641, 142.3663],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_2ad954ee7e54d02a6063fbe7ee95555c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4013f4d647a2cecf03ecbd362dafdfe7 = $(`<div id="html_4013f4d647a2cecf03ecbd362dafdfe7" style="width: 100.0%; height: 100.0%;"><b>29 km S of Shizunai-furukawachō, Japan</b><br>Magnitude: 4.5<br>Depth: 67.732 km<br>Time: 2025-11-09T04:16:41.410Z</div>`)[0];
+                popup_2ad954ee7e54d02a6063fbe7ee95555c.setContent(html_4013f4d647a2cecf03ecbd362dafdfe7);
+            
+        
+
+        circle_marker_fd69039166056b828f3dde7482f7b770.bindPopup(popup_2ad954ee7e54d02a6063fbe7ee95555c)
+        ;
+
+        
+    
+    
+            var circle_marker_dea5eac30cdbff32cc8a99a64b96a692 = L.circleMarker(
+                [39.3627, 143.2742],
+                {"bubblingMouseEvents": true, "color": "#a4d200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a4d200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.695999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_9dd9d592c7cbe1fc38fc7203839fd0d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_04c8bfab3b3ca1a08bfa173d923c1992 = $(`<div id="html_04c8bfab3b3ca1a08bfa173d923c1992" style="width: 100.0%; height: 100.0%;"><b>114 km E of Yamada, Japan</b><br>Magnitude: 4.6<br>Depth: 42.726 km<br>Time: 2025-11-09T02:32:41.421Z</div>`)[0];
+                popup_9dd9d592c7cbe1fc38fc7203839fd0d0.setContent(html_04c8bfab3b3ca1a08bfa173d923c1992);
+            
+        
+
+        circle_marker_dea5eac30cdbff32cc8a99a64b96a692.bindPopup(popup_9dd9d592c7cbe1fc38fc7203839fd0d0)
+        ;
+
+        
+    
+    
+            var circle_marker_9b010f542d575cb266f4747682e59b7f = L.circleMarker(
+                [39.3881, 143.4692],
+                {"bubblingMouseEvents": true, "color": "#ffef00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffef00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.605999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_0d58045a161d858b0789178e45066ea6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8a464b9ec5b3451554b22da1a7bf0d9f = $(`<div id="html_8a464b9ec5b3451554b22da1a7bf0d9f" style="width: 100.0%; height: 100.0%;"><b>131 km E of Yamada, Japan</b><br>Magnitude: 5.1<br>Depth: 10.0 km<br>Time: 2025-11-09T00:17:29.133Z</div>`)[0];
+                popup_0d58045a161d858b0789178e45066ea6.setContent(html_8a464b9ec5b3451554b22da1a7bf0d9f);
+            
+        
+
+        circle_marker_9b010f542d575cb266f4747682e59b7f.bindPopup(popup_0d58045a161d858b0789178e45066ea6)
+        ;
+
+        
+    
+    
+            var circle_marker_1dbff416bab9b1778423c396f61cee8e = L.circleMarker(
+                [39.4593, 143.2811],
+                {"bubblingMouseEvents": true, "color": "#fff900ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_a1161ef47d2e3dc53bd0a73dfa3b987b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8901c09da6c28bbad0b73bd3a57e9c74 = $(`<div id="html_8901c09da6c28bbad0b73bd3a57e9c74" style="width: 100.0%; height: 100.0%;"><b>114 km E of Yamada, Japan</b><br>Magnitude: 5.0<br>Depth: 41.651 km<br>Time: 2025-11-08T22:33:50.388Z</div>`)[0];
+                popup_a1161ef47d2e3dc53bd0a73dfa3b987b.setContent(html_8901c09da6c28bbad0b73bd3a57e9c74);
+            
+        
+
+        circle_marker_1dbff416bab9b1778423c396f61cee8e.bindPopup(popup_a1161ef47d2e3dc53bd0a73dfa3b987b)
+        ;
+
+        
+    
+    
+            var circle_marker_9edf4c8b7ddcc9f585c5adebc9c6d1e1 = L.circleMarker(
+                [39.4223, 143.4875],
+                {"bubblingMouseEvents": true, "color": "#ffef00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffef00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.605999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_c7a9d577f547f8c6fbbe6a2d86181951 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b8bfd3be464da82040e79efbfdc4132b = $(`<div id="html_b8bfd3be464da82040e79efbfdc4132b" style="width: 100.0%; height: 100.0%;"><b>132 km E of Yamada, Japan</b><br>Magnitude: 5.1<br>Depth: 10.0 km<br>Time: 2025-11-08T22:26:58.956Z</div>`)[0];
+                popup_c7a9d577f547f8c6fbbe6a2d86181951.setContent(html_b8bfd3be464da82040e79efbfdc4132b);
+            
+        
+
+        circle_marker_9edf4c8b7ddcc9f585c5adebc9c6d1e1.bindPopup(popup_c7a9d577f547f8c6fbbe6a2d86181951)
+        ;
+
+        
+    
+    
+            var circle_marker_6afb4a5fd57b3a923001b68913365050 = L.circleMarker(
+                [39.4925, 143.4062],
+                {"bubblingMouseEvents": true, "color": "#ffbf00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffbf00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.815999999999995, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_ee1448215f158a70a3aab2a4600b5339 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d5c7c6e9274b7d3f9da26fa3281a6da = $(`<div id="html_3d5c7c6e9274b7d3f9da26fa3281a6da" style="width: 100.0%; height: 100.0%;"><b>125 km E of Yamada, Japan</b><br>Magnitude: 5.6<br>Depth: 19.236 km<br>Time: 2025-11-08T22:15:08.959Z</div>`)[0];
+                popup_ee1448215f158a70a3aab2a4600b5339.setContent(html_3d5c7c6e9274b7d3f9da26fa3281a6da);
+            
+        
+
+        circle_marker_6afb4a5fd57b3a923001b68913365050.bindPopup(popup_ee1448215f158a70a3aab2a4600b5339)
+        ;
+
+        
+    
+    
+            var circle_marker_dd19a87e624b5e96313559e41a34c26c = L.circleMarker(
+                [36.346, 139.8952],
+                {"bubblingMouseEvents": true, "color": "#6db700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6db700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.616000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_5d60dfebdac983976a4935fedee753fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7db96731bdf1f2c035679e15ed97d1b3 = $(`<div id="html_7db96731bdf1f2c035679e15ed97d1b3" style="width: 100.0%; height: 100.0%;"><b>5 km NNE of Yūki, Japan</b><br>Magnitude: 4.4<br>Depth: 90.496 km<br>Time: 2025-11-08T21:24:59.239Z</div>`)[0];
+                popup_5d60dfebdac983976a4935fedee753fa.setContent(html_7db96731bdf1f2c035679e15ed97d1b3);
+            
+        
+
+        circle_marker_dd19a87e624b5e96313559e41a34c26c.bindPopup(popup_5d60dfebdac983976a4935fedee753fa)
+        ;
+
+        
+    
+    
+            var circle_marker_7d03bacdcf0a667d6590ac65379827ab = L.circleMarker(
+                [39.4318, 143.3307],
+                {"bubblingMouseEvents": true, "color": "#ffd200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.496000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_1710ec687da4a05622f2c77530f577a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35a2cbde840ee073ea41bf11cb32902c = $(`<div id="html_35a2cbde840ee073ea41bf11cb32902c" style="width: 100.0%; height: 100.0%;"><b>118 km E of Yamada, Japan</b><br>Magnitude: 5.4<br>Depth: 22.306 km<br>Time: 2025-11-08T21:04:18.978Z</div>`)[0];
+                popup_1710ec687da4a05622f2c77530f577a3.setContent(html_35a2cbde840ee073ea41bf11cb32902c);
+            
+        
+
+        circle_marker_7d03bacdcf0a667d6590ac65379827ab.bindPopup(popup_1710ec687da4a05622f2c77530f577a3)
+        ;
+
+        
+    
+    
+            var circle_marker_ca30ce5e68dc7b83b21fb45accced01b = L.circleMarker(
+                [39.4946, 143.2769],
+                {"bubblingMouseEvents": true, "color": "#ffdc00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffdc00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.854, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_7bf81ab8b2c47d2fb1732804d3976143 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44309bc8f2fa14806334431a9fdb3ee3 = $(`<div id="html_44309bc8f2fa14806334431a9fdb3ee3" style="width: 100.0%; height: 100.0%;"><b>114 km E of Yamada, Japan</b><br>Magnitude: 5.3<br>Depth: 33.093 km<br>Time: 2025-11-08T20:29:19.122Z</div>`)[0];
+                popup_7bf81ab8b2c47d2fb1732804d3976143.setContent(html_44309bc8f2fa14806334431a9fdb3ee3);
+            
+        
+
+        circle_marker_ca30ce5e68dc7b83b21fb45accced01b.bindPopup(popup_7bf81ab8b2c47d2fb1732804d3976143)
+        ;
+
+        
+    
+    
+            var circle_marker_707a608a95489931dd380448c3b85dbb = L.circleMarker(
+                [39.4439, 143.3124],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_1a87f7239933fd915cf8804da6be6e0e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51724afaa33bc69e793045d94c07f5ac = $(`<div id="html_51724afaa33bc69e793045d94c07f5ac" style="width: 100.0%; height: 100.0%;"><b>117 km E of Yamada, Japan</b><br>Magnitude: 4.5<br>Depth: 34.131 km<br>Time: 2025-11-08T10:54:20.306Z</div>`)[0];
+                popup_1a87f7239933fd915cf8804da6be6e0e.setContent(html_51724afaa33bc69e793045d94c07f5ac);
+            
+        
+
+        circle_marker_707a608a95489931dd380448c3b85dbb.bindPopup(popup_1a87f7239933fd915cf8804da6be6e0e)
+        ;
+
+        
+    
+    
+            var circle_marker_40329d51a335cfe5bb29ab1b8be47fb7 = L.circleMarker(
+                [39.4242, 143.2628],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_3809c4323c55ba7b33f91fdbf7b01102 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2470ca7173d9dec967fd8d5f7d3dda36 = $(`<div id="html_2470ca7173d9dec967fd8d5f7d3dda36" style="width: 100.0%; height: 100.0%;"><b>113 km E of Yamada, Japan</b><br>Magnitude: 4.5<br>Depth: 41.209 km<br>Time: 2025-11-08T08:13:21.434Z</div>`)[0];
+                popup_3809c4323c55ba7b33f91fdbf7b01102.setContent(html_2470ca7173d9dec967fd8d5f7d3dda36);
+            
+        
+
+        circle_marker_40329d51a335cfe5bb29ab1b8be47fb7.bindPopup(popup_3809c4323c55ba7b33f91fdbf7b01102)
+        ;
+
+        
+    
+    
+            var circle_marker_2b50dd3594843ab22b5b83902170cb8f = L.circleMarker(
+                [44.972, 149.3224],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_69ceac44c24595835c3f990e444886cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_24b569597b85317a320f4416873db54d = $(`<div id="html_24b569597b85317a320f4416873db54d" style="width: 100.0%; height: 100.0%;"><b>117 km ESE of Kuril’sk, Russia</b><br>Magnitude: 4.5<br>Depth: 92.87 km<br>Time: 2025-11-08T07:56:22.914Z</div>`)[0];
+                popup_69ceac44c24595835c3f990e444886cb.setContent(html_24b569597b85317a320f4416873db54d);
+            
+        
+
+        circle_marker_2b50dd3594843ab22b5b83902170cb8f.bindPopup(popup_69ceac44c24595835c3f990e444886cb)
+        ;
+
+        
+    
+    
+            var circle_marker_8c4b6ed10b1c2f01ca6878b3d3ab7579 = L.circleMarker(
+                [39.4454, 143.3251],
+                {"bubblingMouseEvents": true, "color": "#f6fb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f6fb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.406000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_1b94048b01dc04e548615134e1e21523 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20056988646a04f350f21f0ba7e229f9 = $(`<div id="html_20056988646a04f350f21f0ba7e229f9" style="width: 100.0%; height: 100.0%;"><b>118 km E of Yamada, Japan</b><br>Magnitude: 4.9<br>Depth: 35.192 km<br>Time: 2025-11-08T02:36:12.124Z</div>`)[0];
+                popup_1b94048b01dc04e548615134e1e21523.setContent(html_20056988646a04f350f21f0ba7e229f9);
+            
+        
+
+        circle_marker_8c4b6ed10b1c2f01ca6878b3d3ab7579.bindPopup(popup_1b94048b01dc04e548615134e1e21523)
+        ;
+
+        
+    
+    
+            var circle_marker_8362fa633870a5164eff7b2e06d1d941 = L.circleMarker(
+                [39.4871, 143.3923],
+                {"bubblingMouseEvents": true, "color": "#f6fb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f6fb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.406000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_a3178b4eaf3c2eae92f5ce8682e9d52d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0333766d67c0cba206a954c265006596 = $(`<div id="html_0333766d67c0cba206a954c265006596" style="width: 100.0%; height: 100.0%;"><b>124 km E of Yamada, Japan</b><br>Magnitude: 4.9<br>Depth: 20.296 km<br>Time: 2025-11-08T01:13:31.076Z</div>`)[0];
+                popup_a3178b4eaf3c2eae92f5ce8682e9d52d.setContent(html_0333766d67c0cba206a954c265006596);
+            
+        
+
+        circle_marker_8362fa633870a5164eff7b2e06d1d941.bindPopup(popup_a3178b4eaf3c2eae92f5ce8682e9d52d)
+        ;
+
+        
+    
+    
+            var circle_marker_7cac03378d59f7307b3a1a0a92f10123 = L.circleMarker(
+                [29.2868, 143.5615],
+                {"bubblingMouseEvents": true, "color": "#a4d200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a4d200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.695999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_f54990ac85c101501650afe50da111ae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_854baf84734ccce9ad7fd2e96812dfbe = $(`<div id="html_854baf84734ccce9ad7fd2e96812dfbe" style="width: 100.0%; height: 100.0%;"><b>Izu Islands, Japan region</b><br>Magnitude: 4.6<br>Depth: 17.178 km<br>Time: 2025-11-07T14:52:01.340Z</div>`)[0];
+                popup_f54990ac85c101501650afe50da111ae.setContent(html_854baf84734ccce9ad7fd2e96812dfbe);
+            
+        
+
+        circle_marker_7cac03378d59f7307b3a1a0a92f10123.bindPopup(popup_f54990ac85c101501650afe50da111ae)
+        ;
+
+        
+    
+    
+            var circle_marker_1925cbc8ca9876ae19a38518c7e1a0b1 = L.circleMarker(
+                [30.6602, 141.6416],
+                {"bubblingMouseEvents": true, "color": "#f6fb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f6fb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.406000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_c0837c269ed1deb0f8417d3e24b88658 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_73bacca84520413fe405818fefde06d6 = $(`<div id="html_73bacca84520413fe405818fefde06d6" style="width: 100.0%; height: 100.0%;"><b>Izu Islands, Japan region</b><br>Magnitude: 4.9<br>Depth: 22.124 km<br>Time: 2025-11-07T00:20:07.355Z</div>`)[0];
+                popup_c0837c269ed1deb0f8417d3e24b88658.setContent(html_73bacca84520413fe405818fefde06d6);
+            
+        
+
+        circle_marker_1925cbc8ca9876ae19a38518c7e1a0b1.bindPopup(popup_c0837c269ed1deb0f8417d3e24b88658)
+        ;
+
+        
+    
+    
+            var circle_marker_baaba249c4c0923ae14ab93b8022083b = L.circleMarker(
+                [31.9814, 131.7958],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_2636c3bd25bd259d455857d0fc75f7f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4adf26c4ffce2d8ec6466f56a9dc4fde = $(`<div id="html_4adf26c4ffce2d8ec6466f56a9dc4fde" style="width: 100.0%; height: 100.0%;"><b>32 km ESE of Takanabe, Japan</b><br>Magnitude: 4.5<br>Depth: 41.431 km<br>Time: 2025-11-06T19:25:55.464Z</div>`)[0];
+                popup_2636c3bd25bd259d455857d0fc75f7f5.setContent(html_4adf26c4ffce2d8ec6466f56a9dc4fde);
+            
+        
+
+        circle_marker_baaba249c4c0923ae14ab93b8022083b.bindPopup(popup_2636c3bd25bd259d455857d0fc75f7f5)
+        ;
+
+        
+    
+    
+            var circle_marker_af51c208491888da1bb3b8af41f21f84 = L.circleMarker(
+                [32.0484, 131.9576],
+                {"bubblingMouseEvents": true, "color": "#f6fb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f6fb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.406000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_4f8f985986321288392252fafbcff617 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b597f80f05bbac914fcf69e5a7e7be2 = $(`<div id="html_2b597f80f05bbac914fcf69e5a7e7be2" style="width: 100.0%; height: 100.0%;"><b>43 km ESE of Tsunō, Japan</b><br>Magnitude: 4.9<br>Depth: 40.375 km<br>Time: 2025-11-06T16:23:24.068Z</div>`)[0];
+                popup_4f8f985986321288392252fafbcff617.setContent(html_2b597f80f05bbac914fcf69e5a7e7be2);
+            
+        
+
+        circle_marker_af51c208491888da1bb3b8af41f21f84.bindPopup(popup_4f8f985986321288392252fafbcff617)
+        ;
+
+        
+    
+    
+            var circle_marker_2adc922a22f8227ce78ff94d56d29093 = L.circleMarker(
+                [41.9258, 144.5527],
+                {"bubblingMouseEvents": true, "color": "#dbed00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dbed00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.824, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_3a241d31b3303ee4770d5dcbf2ed734b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fdb2b64a2332d387ef7a50d937cafd85 = $(`<div id="html_fdb2b64a2332d387ef7a50d937cafd85" style="width: 100.0%; height: 100.0%;"><b>111 km ESE of Hiroo, Japan</b><br>Magnitude: 4.8<br>Depth: 30.219 km<br>Time: 2025-11-06T14:29:50.831Z</div>`)[0];
+                popup_3a241d31b3303ee4770d5dcbf2ed734b.setContent(html_fdb2b64a2332d387ef7a50d937cafd85);
+            
+        
+
+        circle_marker_2adc922a22f8227ce78ff94d56d29093.bindPopup(popup_3a241d31b3303ee4770d5dcbf2ed734b)
+        ;
+
+        
+    
+    
+            var circle_marker_4ccde79f8beab51aee404f873e6f1e65 = L.circleMarker(
+                [28.0023, 139.8193],
+                {"bubblingMouseEvents": true, "color": "#6db700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6db700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.616000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_1933f480d7a7a6ff5dc3f12c238621b9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b523ae72d581669d9208f1996af269fe = $(`<div id="html_b523ae72d581669d9208f1996af269fe" style="width: 100.0%; height: 100.0%;"><b>Bonin Islands, Japan region</b><br>Magnitude: 4.4<br>Depth: 419.455 km<br>Time: 2025-11-05T16:24:10.321Z</div>`)[0];
+                popup_1933f480d7a7a6ff5dc3f12c238621b9.setContent(html_b523ae72d581669d9208f1996af269fe);
+            
+        
+
+        circle_marker_4ccde79f8beab51aee404f873e6f1e65.bindPopup(popup_1933f480d7a7a6ff5dc3f12c238621b9)
+        ;
+
+        
+    
+    
+            var circle_marker_da600c176c5a1d471c8b4958b9e06b71 = L.circleMarker(
+                [27.6194, 143.1482],
+                {"bubblingMouseEvents": true, "color": "#dbed00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dbed00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.824, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_892af23c85922d4c623a8fa4757041b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6915539feaa8420faac303426f26bd1d = $(`<div id="html_6915539feaa8420faac303426f26bd1d" style="width: 100.0%; height: 100.0%;"><b>Bonin Islands, Japan region</b><br>Magnitude: 4.8<br>Depth: 10.0 km<br>Time: 2025-11-05T08:54:52.780Z</div>`)[0];
+                popup_892af23c85922d4c623a8fa4757041b5.setContent(html_6915539feaa8420faac303426f26bd1d);
+            
+        
+
+        circle_marker_da600c176c5a1d471c8b4958b9e06b71.bindPopup(popup_892af23c85922d4c623a8fa4757041b5)
+        ;
+
+        
+    
+    
+            var circle_marker_e4a9b3506d4b17cbc81474b27f6f1cd3 = L.circleMarker(
+                [34.7715, 140.9823],
+                {"bubblingMouseEvents": true, "color": "#bfe000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bfe000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.254000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_8c87f04ccb45dc3626a4e2ec68825ed8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_afc916bf84429e39b36d43d18ae581e6 = $(`<div id="html_afc916bf84429e39b36d43d18ae581e6" style="width: 100.0%; height: 100.0%;"><b>73 km SE of Shinmachi, Japan</b><br>Magnitude: 4.7<br>Depth: 35.0 km<br>Time: 2025-11-04T22:17:29.436Z</div>`)[0];
+                popup_8c87f04ccb45dc3626a4e2ec68825ed8.setContent(html_afc916bf84429e39b36d43d18ae581e6);
+            
+        
+
+        circle_marker_e4a9b3506d4b17cbc81474b27f6f1cd3.bindPopup(popup_8c87f04ccb45dc3626a4e2ec68825ed8)
+        ;
+
+        
+    
+    
+            var circle_marker_ff32a64dc377b3382ef819a10f73a49b = L.circleMarker(
+                [39.3826, 143.6726],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_2dda0075fccb3deebfc1594be1bcba21 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_23dd0cd706c5825725609c39dd49c357 = $(`<div id="html_23dd0cd706c5825725609c39dd49c357" style="width: 100.0%; height: 100.0%;"><b>148 km E of Yamada, Japan</b><br>Magnitude: 4.5<br>Depth: 10.0 km<br>Time: 2025-11-04T21:05:57.874Z</div>`)[0];
+                popup_2dda0075fccb3deebfc1594be1bcba21.setContent(html_23dd0cd706c5825725609c39dd49c357);
+            
+        
+
+        circle_marker_ff32a64dc377b3382ef819a10f73a49b.bindPopup(popup_2dda0075fccb3deebfc1594be1bcba21)
+        ;
+
+        
+    
+    
+            var circle_marker_db2ff8bd8c5e154daf496502a7a6d518 = L.circleMarker(
+                [45.7368, 150.0326],
+                {"bubblingMouseEvents": true, "color": "#6db700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6db700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.616000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_5cf4260d61a383445a614aa32f020c4f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c5869a9c549db1adac894ff2282dca0f = $(`<div id="html_c5869a9c549db1adac894ff2282dca0f" style="width: 100.0%; height: 100.0%;"><b>177 km ENE of Kuril’sk, Russia</b><br>Magnitude: 4.4<br>Depth: 98.824 km<br>Time: 2025-11-04T13:22:51.639Z</div>`)[0];
+                popup_5cf4260d61a383445a614aa32f020c4f.setContent(html_c5869a9c549db1adac894ff2282dca0f);
+            
+        
+
+        circle_marker_db2ff8bd8c5e154daf496502a7a6d518.bindPopup(popup_5cf4260d61a383445a614aa32f020c4f)
+        ;
+
+        
+    
+    
+            var circle_marker_7d9693e576d6e7ec3e4a7c14a5da8f28 = L.circleMarker(
+                [39.4046, 143.5363],
+                {"bubblingMouseEvents": true, "color": "#ffe600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.224, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_1a1413133a57fa8491e270ad0857808d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0246acf9e3630f58d2422a8ce32d2b51 = $(`<div id="html_0246acf9e3630f58d2422a8ce32d2b51" style="width: 100.0%; height: 100.0%;"><b>136 km E of Yamada, Japan</b><br>Magnitude: 5.2<br>Depth: 10.0 km<br>Time: 2025-11-03T19:16:05.092Z</div>`)[0];
+                popup_1a1413133a57fa8491e270ad0857808d.setContent(html_0246acf9e3630f58d2422a8ce32d2b51);
+            
+        
+
+        circle_marker_7d9693e576d6e7ec3e4a7c14a5da8f28.bindPopup(popup_1a1413133a57fa8491e270ad0857808d)
+        ;
+
+        
+    
+    
+            var circle_marker_a2b80f8f299c25c7fe7f66885405d581 = L.circleMarker(
+                [39.9757, 143.6165],
+                {"bubblingMouseEvents": true, "color": "#bfe000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bfe000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.254000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_8afcac9a2de114bfd9fdb20b01ca8987 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f79e5f6f52fdb2db20f9d6ff8c886b8a = $(`<div id="html_f79e5f6f52fdb2db20f9d6ff8c886b8a" style="width: 100.0%; height: 100.0%;"><b>148 km ENE of Miyako, Japan</b><br>Magnitude: 4.7<br>Depth: 10.0 km<br>Time: 2025-11-03T10:17:57.880Z</div>`)[0];
+                popup_8afcac9a2de114bfd9fdb20b01ca8987.setContent(html_f79e5f6f52fdb2db20f9d6ff8c886b8a);
+            
+        
+
+        circle_marker_a2b80f8f299c25c7fe7f66885405d581.bindPopup(popup_8afcac9a2de114bfd9fdb20b01ca8987)
+        ;
+
+        
+    
+    
+            var circle_marker_008eba7a36c4c93cf86deffaa43985bd = L.circleMarker(
+                [40.0047, 143.4942],
+                {"bubblingMouseEvents": true, "color": "#a4d200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a4d200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.695999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_da5f29cd69203bbab3d6f7fca904fd59 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02dcb15e8b201492085029f84c117229 = $(`<div id="html_02dcb15e8b201492085029f84c117229" style="width: 100.0%; height: 100.0%;"><b>138 km ENE of Miyako, Japan</b><br>Magnitude: 4.6<br>Depth: 10.0 km<br>Time: 2025-11-02T10:03:59.208Z</div>`)[0];
+                popup_da5f29cd69203bbab3d6f7fca904fd59.setContent(html_02dcb15e8b201492085029f84c117229);
+            
+        
+
+        circle_marker_008eba7a36c4c93cf86deffaa43985bd.bindPopup(popup_da5f29cd69203bbab3d6f7fca904fd59)
+        ;
+
+        
+    
+    
+            var circle_marker_ddaa597ab1074289942bfc96e6251049 = L.circleMarker(
+                [40.0188, 143.4906],
+                {"bubblingMouseEvents": true, "color": "#f6fb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f6fb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.406000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_32e100890e2d7f555670cd08d4a542e3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_84d23458d6bc4f7708a9363d2416d05f = $(`<div id="html_84d23458d6bc4f7708a9363d2416d05f" style="width: 100.0%; height: 100.0%;"><b>138 km ENE of Miyako, Japan</b><br>Magnitude: 4.9<br>Depth: 10.0 km<br>Time: 2025-11-02T09:57:54.821Z</div>`)[0];
+                popup_32e100890e2d7f555670cd08d4a542e3.setContent(html_84d23458d6bc4f7708a9363d2416d05f);
+            
+        
+
+        circle_marker_ddaa597ab1074289942bfc96e6251049.bindPopup(popup_32e100890e2d7f555670cd08d4a542e3)
+        ;
+
+        
+    
+    
+            var circle_marker_ccdcff3a4063b6d269b3a57774fe3000 = L.circleMarker(
+                [39.1645, 142.0225],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_a9de64b64c847e75cf112c2c670958ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aa511606c0024e61e6916f14310897be = $(`<div id="html_aa511606c0024e61e6916f14310897be" style="width: 100.0%; height: 100.0%;"><b>18 km SE of Kamaishi, Japan</b><br>Magnitude: 4.5<br>Depth: 73.577 km<br>Time: 2025-11-01T14:44:09.114Z</div>`)[0];
+                popup_a9de64b64c847e75cf112c2c670958ac.setContent(html_aa511606c0024e61e6916f14310897be);
+            
+        
+
+        circle_marker_ccdcff3a4063b6d269b3a57774fe3000.bindPopup(popup_a9de64b64c847e75cf112c2c670958ac)
+        ;
+
+        
+    
+    
+            var circle_marker_1df82632cfe09c63579b56867a7e7152 = L.circleMarker(
+                [20.1659, 122.1585],
+                {"bubblingMouseEvents": true, "color": "#f6fb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f6fb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.406000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_363f9c93ff0ddf6a4733025713be6080 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_552c21f0e6b1e648f2015dcf3392b3c2 = $(`<div id="html_552c21f0e6b1e648f2015dcf3392b3c2" style="width: 100.0%; height: 100.0%;"><b>36 km SSE of Basco, Philippines</b><br>Magnitude: 4.9<br>Depth: 143.212 km<br>Time: 2025-11-01T06:57:25.242Z</div>`)[0];
+                popup_363f9c93ff0ddf6a4733025713be6080.setContent(html_552c21f0e6b1e648f2015dcf3392b3c2);
+            
+        
+
+        circle_marker_1df82632cfe09c63579b56867a7e7152.bindPopup(popup_363f9c93ff0ddf6a4733025713be6080)
+        ;
+
+        
+    
+    
+            var circle_marker_0b554759a23588331da96971778c674f = L.circleMarker(
+                [23.3058, 123.0127],
+                {"bubblingMouseEvents": true, "color": "#a4d200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a4d200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.695999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_7eba987141fc7562e93331d9d26e3f41 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_09eb0f4a66fc9a8f49846051285365b2 = $(`<div id="html_09eb0f4a66fc9a8f49846051285365b2" style="width: 100.0%; height: 100.0%;"><b>128 km S of Yonakuni, Japan</b><br>Magnitude: 4.6<br>Depth: 10.0 km<br>Time: 2025-10-31T00:25:03.476Z</div>`)[0];
+                popup_7eba987141fc7562e93331d9d26e3f41.setContent(html_09eb0f4a66fc9a8f49846051285365b2);
+            
+        
+
+        circle_marker_0b554759a23588331da96971778c674f.bindPopup(popup_7eba987141fc7562e93331d9d26e3f41)
+        ;
+
+        
+    
+    
+            var circle_marker_9a21aed97d2cb8a8e29b0ac52aca4f90 = L.circleMarker(
+                [23.4311, 125.2324],
+                {"bubblingMouseEvents": true, "color": "#6db700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6db700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.616000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_819c6fcf9e8ab5b569bd3aaf53cd5e7c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b188fa192ad6eaf4a914a166a632bcb0 = $(`<div id="html_b188fa192ad6eaf4a914a166a632bcb0" style="width: 100.0%; height: 100.0%;"><b>147 km SSE of Tarama, Japan</b><br>Magnitude: 4.4<br>Depth: 10.0 km<br>Time: 2025-10-30T20:36:52.673Z</div>`)[0];
+                popup_819c6fcf9e8ab5b569bd3aaf53cd5e7c.setContent(html_b188fa192ad6eaf4a914a166a632bcb0);
+            
+        
+
+        circle_marker_9a21aed97d2cb8a8e29b0ac52aca4f90.bindPopup(popup_819c6fcf9e8ab5b569bd3aaf53cd5e7c)
+        ;
+
+        
+    
+    
+            var circle_marker_e129a49c7c09e8edd34d3de3b6a8b813 = L.circleMarker(
+                [37.0685, 141.1412],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_e2980cb747a01ba187642fd63218f951 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fad1e6e183f817d733aeabd743a92aa6 = $(`<div id="html_fad1e6e183f817d733aeabd743a92aa6" style="width: 100.0%; height: 100.0%;"><b>23 km E of Iwaki, Japan</b><br>Magnitude: 4.5<br>Depth: 42.833 km<br>Time: 2025-10-30T08:00:56.327Z</div>`)[0];
+                popup_e2980cb747a01ba187642fd63218f951.setContent(html_fad1e6e183f817d733aeabd743a92aa6);
+            
+        
+
+        circle_marker_e129a49c7c09e8edd34d3de3b6a8b813.bindPopup(popup_e2980cb747a01ba187642fd63218f951)
+        ;
+
+        
+    
+    
+            var circle_marker_758da1cd5eb5aa3f1f138353c5b541a3 = L.circleMarker(
+                [35.7618, 140.0357],
+                {"bubblingMouseEvents": true, "color": "#a4d200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a4d200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.695999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_3c4f55d889ef77ba5146c6ac36182fff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb5d7b574cde1a783e17883c9de03df7 = $(`<div id="html_fb5d7b574cde1a783e17883c9de03df7" style="width: 100.0%; height: 100.0%;"><b>5 km SSW of Shiroi, Japan</b><br>Magnitude: 4.6<br>Depth: 85.358 km<br>Time: 2025-10-26T13:34:57.870Z</div>`)[0];
+                popup_3c4f55d889ef77ba5146c6ac36182fff.setContent(html_fb5d7b574cde1a783e17883c9de03df7);
+            
+        
+
+        circle_marker_758da1cd5eb5aa3f1f138353c5b541a3.bindPopup(popup_3c4f55d889ef77ba5146c6ac36182fff)
+        ;
+
+        
+    
+    
+            var circle_marker_25b76ae4d90c61105459ee4efd2182d1 = L.circleMarker(
+                [46.5893, 152.6585],
+                {"bubblingMouseEvents": true, "color": "#369b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#369b00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.584, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_281c85c2ced1ce2f37d43bf1cca21960 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d12aaf3fcc38e1123412172c146e69d3 = $(`<div id="html_d12aaf3fcc38e1123412172c146e69d3" style="width: 100.0%; height: 100.0%;"><b>Kuril Islands</b><br>Magnitude: 4.2<br>Depth: 51.935 km<br>Time: 2025-10-26T06:23:15.548Z</div>`)[0];
+                popup_281c85c2ced1ce2f37d43bf1cca21960.setContent(html_d12aaf3fcc38e1123412172c146e69d3);
+            
+        
+
+        circle_marker_25b76ae4d90c61105459ee4efd2182d1.bindPopup(popup_281c85c2ced1ce2f37d43bf1cca21960)
+        ;
+
+        
+    
+    
+            var circle_marker_d29c79e3696cce9a69ce42e490183ce0 = L.circleMarker(
+                [36.6074, 139.3644],
+                {"bubblingMouseEvents": true, "color": "#a4d200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a4d200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.695999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_0f6dacf3c4fc990276c2974a9b8b52b1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_09189aad388e146e727213fb7f5cf0d8 = $(`<div id="html_09189aad388e146e727213fb7f5cf0d8" style="width: 100.0%; height: 100.0%;"><b>19 km NNE of Midori, Japan</b><br>Magnitude: 4.6<br>Depth: 12.413 km<br>Time: 2025-10-26T03:04:55.283Z</div>`)[0];
+                popup_0f6dacf3c4fc990276c2974a9b8b52b1.setContent(html_09189aad388e146e727213fb7f5cf0d8);
+            
+        
+
+        circle_marker_d29c79e3696cce9a69ce42e490183ce0.bindPopup(popup_0f6dacf3c4fc990276c2974a9b8b52b1)
+        ;
+
+        
+    
+    
+            var circle_marker_5e6c88f754efe5ad0a11fafd63a3d0d4 = L.circleMarker(
+                [45.2191, 147.2981],
+                {"bubblingMouseEvents": true, "color": "#52a900ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#52a900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.094, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_5dd4e2f0eb4b82563ecc85d994873eee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c2ea8c3a60730eb0eaaa0614acfb9982 = $(`<div id="html_c2ea8c3a60730eb0eaaa0614acfb9982" style="width: 100.0%; height: 100.0%;"><b>45 km W of Kuril’sk, Russia</b><br>Magnitude: 4.3<br>Depth: 10.0 km<br>Time: 2025-10-26T00:21:21.559Z</div>`)[0];
+                popup_5dd4e2f0eb4b82563ecc85d994873eee.setContent(html_c2ea8c3a60730eb0eaaa0614acfb9982);
+            
+        
+
+        circle_marker_5e6c88f754efe5ad0a11fafd63a3d0d4.bindPopup(popup_5dd4e2f0eb4b82563ecc85d994873eee)
+        ;
+
+        
+    
+    
+            var circle_marker_8049d2a179f0dd878b7fbf9b349e01c0 = L.circleMarker(
+                [32.3875, 140.0058],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_3b5ef79e5c63d0b4ccaa2a2d420183db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_181e500ecfded5063222cc482f2d2afd = $(`<div id="html_181e500ecfded5063222cc482f2d2afd" style="width: 100.0%; height: 100.0%;"><b>272 km SSE of Shimoda, Japan</b><br>Magnitude: 4.5<br>Depth: 104.545 km<br>Time: 2025-10-25T23:05:43.082Z</div>`)[0];
+                popup_3b5ef79e5c63d0b4ccaa2a2d420183db.setContent(html_181e500ecfded5063222cc482f2d2afd);
+            
+        
+
+        circle_marker_8049d2a179f0dd878b7fbf9b349e01c0.bindPopup(popup_3b5ef79e5c63d0b4ccaa2a2d420183db)
+        ;
+
+        
+    
+    
+            var circle_marker_51a491538fa2c9bacc8702c94cda6f4e = L.circleMarker(
+                [43.0876, 130.9954],
+                {"bubblingMouseEvents": true, "color": "#ffe600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.224, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_65c4efdadd68a9ec268487cee1d6d6b7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_29acc975a6d6cd54ff2328b1bd806741 = $(`<div id="html_29acc975a6d6cd54ff2328b1bd806741" style="width: 100.0%; height: 100.0%;"><b>40 km NW of Slavyanka, Russia</b><br>Magnitude: 5.2<br>Depth: 561.251 km<br>Time: 2025-10-25T11:45:23.099Z</div>`)[0];
+                popup_65c4efdadd68a9ec268487cee1d6d6b7.setContent(html_29acc975a6d6cd54ff2328b1bd806741);
+            
+        
+
+        circle_marker_51a491538fa2c9bacc8702c94cda6f4e.bindPopup(popup_65c4efdadd68a9ec268487cee1d6d6b7)
+        ;
+
+        
+    
+    
+            var circle_marker_dd01a9cb5d3a8583d1569ee738594371 = L.circleMarker(
+                [46.7715, 151.7018],
+                {"bubblingMouseEvents": true, "color": "#6db700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6db700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.616000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_6feaec604a88ee7106202eb645b9e4dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_456858fbf445648e8ecdff8ce5892534 = $(`<div id="html_456858fbf445648e8ecdff8ce5892534" style="width: 100.0%; height: 100.0%;"><b>Kuril Islands</b><br>Magnitude: 4.4<br>Depth: 99.79 km<br>Time: 2025-10-25T06:15:01.109Z</div>`)[0];
+                popup_6feaec604a88ee7106202eb645b9e4dc.setContent(html_456858fbf445648e8ecdff8ce5892534);
+            
+        
+
+        circle_marker_dd01a9cb5d3a8583d1569ee738594371.bindPopup(popup_6feaec604a88ee7106202eb645b9e4dc)
+        ;
+
+        
+    
+    
+            var circle_marker_5fcffbfd1f4132d7bd05e2fd71bec126 = L.circleMarker(
+                [28.1494, 142.832],
+                {"bubblingMouseEvents": true, "color": "#89c400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.15, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_66bfdc4d6b7855c4ed7759e4a569f1c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cecf09a79ba3d8a4523b921f180a4b4f = $(`<div id="html_cecf09a79ba3d8a4523b921f180a4b4f" style="width: 100.0%; height: 100.0%;"><b>Bonin Islands, Japan region</b><br>Magnitude: 4.5<br>Depth: 10.0 km<br>Time: 2025-10-24T20:13:26.460Z</div>`)[0];
+                popup_66bfdc4d6b7855c4ed7759e4a569f1c1.setContent(html_cecf09a79ba3d8a4523b921f180a4b4f);
+            
+        
+
+        circle_marker_5fcffbfd1f4132d7bd05e2fd71bec126.bindPopup(popup_66bfdc4d6b7855c4ed7759e4a569f1c1)
+        ;
+
+        
+    
+    
+            var circle_marker_cf3029d06e3fdf3d057c9f1190a8f972 = L.circleMarker(
+                [38.2689, 134.2584],
+                {"bubblingMouseEvents": true, "color": "#008000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.6, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_2e197aa5d21e43985e2bf1fdd038fa6a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_398c58e9f0e76de922b755a1da549281 = $(`<div id="html_398c58e9f0e76de922b755a1da549281" style="width: 100.0%; height: 100.0%;"><b>259 km WNW of Anamizu, Japan</b><br>Magnitude: 4.0<br>Depth: 408.78 km<br>Time: 2025-10-24T18:44:08.621Z</div>`)[0];
+                popup_2e197aa5d21e43985e2bf1fdd038fa6a.setContent(html_398c58e9f0e76de922b755a1da549281);
+            
+        
+
+        circle_marker_cf3029d06e3fdf3d057c9f1190a8f972.bindPopup(popup_2e197aa5d21e43985e2bf1fdd038fa6a)
+        ;
+
+        
+    
+    
+            var circle_marker_20c24f288e5e25bc49b4f8bbe83d7f0b = L.circleMarker(
+                [42.9633, 145.5515],
+                {"bubblingMouseEvents": true, "color": "#ffb500ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffb500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.494, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_df2aa7359dc979d028e4187cfa559d3f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0d588d484ef7502440fac1d24c79fe1 = $(`<div id="html_d0d588d484ef7502440fac1d24c79fe1" style="width: 100.0%; height: 100.0%;"><b>40 km S of Nemuro, Japan</b><br>Magnitude: 5.7<br>Depth: 49.866 km<br>Time: 2025-10-24T16:40:11.065Z</div>`)[0];
+                popup_df2aa7359dc979d028e4187cfa559d3f.setContent(html_d0d588d484ef7502440fac1d24c79fe1);
+            
+        
+
+        circle_marker_20c24f288e5e25bc49b4f8bbe83d7f0b.bindPopup(popup_df2aa7359dc979d028e4187cfa559d3f)
+        ;
+
+        
+    
+    
+            var circle_marker_f1cd62747cc15e9e8a134486954d5b7b = L.circleMarker(
+                [35.6952, 140.036],
+                {"bubblingMouseEvents": true, "color": "#a4d200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a4d200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.695999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_21e40898f352c30d56c18309ee4de23c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4b5f69800c65e707b3d1619f79aa2878 = $(`<div id="html_4b5f69800c65e707b3d1619f79aa2878" style="width: 100.0%; height: 100.0%;"><b>4 km E of Honchō, Japan</b><br>Magnitude: 4.6<br>Depth: 76.733 km<br>Time: 2025-10-24T06:47:25.561Z</div>`)[0];
+                popup_21e40898f352c30d56c18309ee4de23c.setContent(html_4b5f69800c65e707b3d1619f79aa2878);
+            
+        
+
+        circle_marker_f1cd62747cc15e9e8a134486954d5b7b.bindPopup(popup_21e40898f352c30d56c18309ee4de23c)
+        ;
+
+        
+    
+    
+            var circle_marker_5faf2253cde2ed7d1633d4d90d1581a9 = L.circleMarker(
+                [25.545, 122.1869],
+                {"bubblingMouseEvents": true, "color": "#52a900ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#52a900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.094, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_40d4cbdc904f08fd54b7de1a49fa3e4f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a85276810ab5cda0df39e1142830ec88 = $(`<div id="html_a85276810ab5cda0df39e1142830ec88" style="width: 100.0%; height: 100.0%;"><b>59 km NE of Jiufen, Taiwan</b><br>Magnitude: 4.3<br>Depth: 281.609 km<br>Time: 2025-10-24T03:34:30.995Z</div>`)[0];
+                popup_40d4cbdc904f08fd54b7de1a49fa3e4f.setContent(html_a85276810ab5cda0df39e1142830ec88);
+            
+        
+
+        circle_marker_5faf2253cde2ed7d1633d4d90d1581a9.bindPopup(popup_40d4cbdc904f08fd54b7de1a49fa3e4f)
+        ;
+
+        
+    
+    
+            var circle_marker_14d0ee04130d5d394fe2dc38622e632d = L.circleMarker(
+                [38.2353, 141.89],
+                {"bubblingMouseEvents": true, "color": "#52a900ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#52a900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.094, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_8842f40443592c61c44ccd530130cd19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20421d344309e893fc37c2f74d7c3c15 = $(`<div id="html_20421d344309e893fc37c2f74d7c3c15" style="width: 100.0%; height: 100.0%;"><b>45 km ESE of Onagawa Chō, Japan</b><br>Magnitude: 4.3<br>Depth: 68.806 km<br>Time: 2025-10-24T00:27:15.995Z</div>`)[0];
+                popup_8842f40443592c61c44ccd530130cd19.setContent(html_20421d344309e893fc37c2f74d7c3c15);
+            
+        
+
+        circle_marker_14d0ee04130d5d394fe2dc38622e632d.bindPopup(popup_8842f40443592c61c44ccd530130cd19)
+        ;
+
+        
+    
+    
+            var circle_marker_3fb063c3160a747b31b0532e049795ad = L.circleMarker(
+                [37.4154, 141.9798],
+                {"bubblingMouseEvents": true, "color": "#bfe000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bfe000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.254000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_36e29ecbd66a6402a60db42f2b357368 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_807ab4087a8a6ca8922c427b2ce7c80d = $(`<div id="html_807ab4087a8a6ca8922c427b2ce7c80d" style="width: 100.0%; height: 100.0%;"><b>85 km E of Tomioka, Japan</b><br>Magnitude: 4.7<br>Depth: 46.881 km<br>Time: 2025-10-23T21:09:28.374Z</div>`)[0];
+                popup_36e29ecbd66a6402a60db42f2b357368.setContent(html_807ab4087a8a6ca8922c427b2ce7c80d);
+            
+        
+
+        circle_marker_3fb063c3160a747b31b0532e049795ad.bindPopup(popup_36e29ecbd66a6402a60db42f2b357368)
+        ;
+
+        
+    
+    
+            var circle_marker_027b2dfc02e7fa3306d3fc8104d1a134 = L.circleMarker(
+                [42.9793, 145.3836],
+                {"bubblingMouseEvents": true, "color": "#ffe600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.224, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_5396f0305f59c71b802b829fdfb02a36 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_84c5a7d432a149d786c65ea0af89646f = $(`<div id="html_84c5a7d432a149d786c65ea0af89646f" style="width: 100.0%; height: 100.0%;"><b>41 km SSW of Nemuro, Japan</b><br>Magnitude: 5.2<br>Depth: 58.831 km<br>Time: 2025-10-22T09:17:34.017Z</div>`)[0];
+                popup_5396f0305f59c71b802b829fdfb02a36.setContent(html_84c5a7d432a149d786c65ea0af89646f);
+            
+        
+
+        circle_marker_027b2dfc02e7fa3306d3fc8104d1a134.bindPopup(popup_5396f0305f59c71b802b829fdfb02a36)
+        ;
+
+        
+    
+    
+            var circle_marker_32e5b6c240c0297050a3a4a2cbc3ea71 = L.circleMarker(
+                [37.5486, 142.2691],
+                {"bubblingMouseEvents": true, "color": "#6db700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6db700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.616000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_8e573dd4f1b9e27a6bf87b349d2111bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2194679220fd7e0d0275414ea877145b = $(`<div id="html_2194679220fd7e0d0275414ea877145b" style="width: 100.0%; height: 100.0%;"><b>112 km E of Namie, Japan</b><br>Magnitude: 4.4<br>Depth: 35.0 km<br>Time: 2025-10-21T18:48:32.844Z</div>`)[0];
+                popup_8e573dd4f1b9e27a6bf87b349d2111bd.setContent(html_2194679220fd7e0d0275414ea877145b);
+            
+        
+
+        circle_marker_32e5b6c240c0297050a3a4a2cbc3ea71.bindPopup(popup_8e573dd4f1b9e27a6bf87b349d2111bd)
+        ;
+
+        
+    
+    
+            var circle_marker_9f43a268bd0d884470e8a713e326ed41 = L.circleMarker(
+                [35.458, 135.4764],
+                {"bubblingMouseEvents": true, "color": "#ffef00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffef00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.605999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+        
+    
+        var popup_7c2f44f92433f45b046e84e890a56950 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8b12dfadef30e61e9a2e13ef9d5fff36 = $(`<div id="html_8b12dfadef30e61e9a2e13ef9d5fff36" style="width: 100.0%; height: 100.0%;"><b>7 km WSW of Takahama, Japan</b><br>Magnitude: 5.1<br>Depth: 360.075 km<br>Time: 2025-10-20T19:04:06.258Z</div>`)[0];
+                popup_7c2f44f92433f45b046e84e890a56950.setContent(html_8b12dfadef30e61e9a2e13ef9d5fff36);
+            
+        
+
+        circle_marker_9f43a268bd0d884470e8a713e326ed41.bindPopup(popup_7c2f44f92433f45b046e84e890a56950)
+        ;
+
+        
+    
+    
+    var color_map_3a5bc6231deeb7e0f8b5377c247bd732 = {};
+
+    
+    color_map_3a5bc6231deeb7e0f8b5377c247bd732.color = d3.scale.threshold()
+              .domain([4.0, 4.00561122244489, 4.011222444889779, 4.016833667334669, 4.0224448897795595, 4.028056112224449, 4.033667334669339, 4.039278557114228, 4.044889779559118, 4.050501002004008, 4.056112224448897, 4.0617234468937875, 4.067334669338678, 4.072945891783567, 4.078557114228457, 4.084168336673347, 4.089779559118236, 4.095390781563126, 4.101002004008016, 4.106613226452906, 4.112224448897796, 4.117835671342686, 4.123446893787575, 4.129058116232465, 4.134669338677354, 4.140280561122244, 4.1458917835671345, 4.151503006012024, 4.157114228456914, 4.162725450901804, 4.168336673346693, 4.173947895791583, 4.179559118236473, 4.1851703406813625, 4.190781563126253, 4.196392785571143, 4.202004008016032, 4.207615230460922, 4.213226452905811, 4.218837675350701, 4.224448897795591, 4.230060120240481, 4.235671342685371, 4.241282565130261, 4.24689378757515, 4.25250501002004, 4.25811623246493, 4.263727454909819, 4.2693386773547095, 4.2749498997996, 4.280561122244489, 4.286172344689379, 4.291783567134268, 4.297394789579158, 4.303006012024048, 4.3086172344689375, 4.314228456913828, 4.319839679358718, 4.325450901803607, 4.331062124248497, 4.336673346693387, 4.342284569138276, 4.347895791583166, 4.353507014028056, 4.359118236472946, 4.364729458917836, 4.370340681362725, 4.375951903807615, 4.381563126252505, 4.387174348697394, 4.3927855711422845, 4.398396793587175, 4.404008016032064, 4.409619238476954, 4.415230460921844, 4.420841683366733, 4.426452905811623, 4.432064128256513, 4.437675350701403, 4.443286573146293, 4.448897795591183, 4.454509018036072, 4.460120240480962, 4.465731462925851, 4.471342685370741, 4.4769539078156315, 4.482565130260521, 4.488176352705411, 4.493787575150301, 4.49939879759519, 4.50501002004008, 4.510621242484969, 4.5162324649298595, 4.52184368737475, 4.527454909819639, 4.533066132264529, 4.538677354709419, 4.544288577154308, 4.549899799599198, 4.555511022044088, 4.561122244488978, 4.566733466933868, 4.572344689378758, 4.577955911823647, 4.583567134268537, 4.589178356713427, 4.594789579158316, 4.6004008016032065, 4.606012024048097, 4.611623246492986, 4.617234468937876, 4.622845691382765, 4.628456913827655, 4.634068136272545, 4.6396793587174345, 4.645290581162325, 4.650901803607215, 4.656513026052104, 4.662124248496994, 4.667735470941884, 4.673346693386773, 4.678957915831663, 4.684569138276553, 4.690180360721443, 4.695791583166333, 4.701402805611222, 4.707014028056112, 4.712625250501002, 4.718236472945891, 4.7238476953907815, 4.729458917835672, 4.735070140280561, 4.740681362725451, 4.746292585170341, 4.75190380761523, 4.75751503006012, 4.76312625250501, 4.7687374749499, 4.77434869739479, 4.77995991983968, 4.785571142284569, 4.791182364729459, 4.796793587174348, 4.802404809619238, 4.8080160320641285, 4.813627254509018, 4.819238476953908, 4.824849699398797, 4.830460921843687, 4.836072144288577, 4.841683366733466, 4.8472945891783565, 4.852905811623247, 4.858517034068136, 4.864128256513026, 4.869739478957916, 4.875350701402805, 4.880961923847695, 4.886573146292585, 4.892184368737475, 4.897795591182365, 4.903406813627255, 4.909018036072144, 4.914629258517034, 4.920240480961924, 4.925851703406813, 4.9314629258517035, 4.937074148296593, 4.942685370741483, 4.948296593186373, 4.953907815631262, 4.959519038076152, 4.965130260521042, 4.9707414829659315, 4.976352705410822, 4.981963927855711, 4.987575150300601, 4.993186372745491, 4.99879759519038, 5.00440881763527, 5.01002004008016, 5.01563126252505, 5.02124248496994, 5.02685370741483, 5.032464929859719, 5.038076152304609, 5.043687374749499, 5.0492985971943884, 5.0549098196392785, 5.060521042084169, 5.066132264529058, 5.071743486973948, 5.077354709418838, 5.082965931863727, 5.088577154308617, 5.094188376753507, 5.099799599198397, 5.105410821643286, 5.111022044088177, 5.116633266533066, 5.122244488977956, 5.127855711422845, 5.1334669338677354, 5.139078156312625, 5.144689378757515, 5.150300601202405, 5.155911823647294, 5.161523046092184, 5.167134268537074, 5.1727454909819635, 5.1783567134268536, 5.183967935871744, 5.189579158316633, 5.195190380761523, 5.200801603206413, 5.206412825651302, 5.212024048096192, 5.2176352705410824, 5.223246492985972, 5.228857715430862, 5.234468937875752, 5.240080160320641, 5.245691382765531, 5.251302605210421, 5.2569138276553105, 5.2625250501002006, 5.26813627254509, 5.27374749498998, 5.27935871743487, 5.284969939879759, 5.290581162324649, 5.2961923847695385, 5.301803607214429, 5.307414829659319, 5.313026052104208, 5.318637274549098, 5.324248496993988, 5.329859719438877, 5.335470941883767, 5.3410821643286575, 5.346693386773547, 5.352304609218437, 5.357915831663327, 5.363527054108216, 5.369138276553106, 5.374749498997996, 5.3803607214428855, 5.385971943887776, 5.391583166332666, 5.397194388777555, 5.402805611222445, 5.408416833667335, 5.414028056112224, 5.419639278557114, 5.425250501002004, 5.430861723446894, 5.436472945891784, 5.442084168336673, 5.447695390781563, 5.453306613226452, 5.458917835671342, 5.4645290581162325, 5.470140280561122, 5.475751503006012, 5.481362725450902, 5.486973947895791, 5.492585170340681, 5.498196392785571, 5.5038076152304605, 5.509418837675351, 5.515030060120241, 5.52064128256513, 5.52625250501002, 5.53186372745491, 5.537474949899799, 5.543086172344689, 5.5486973947895795, 5.554308617234469, 5.559919839679359, 5.565531062124249, 5.571142284569138, 5.576753507014028, 5.582364729458917, 5.5879759519038075, 5.593587174348698, 5.599198396793588, 5.604809619238477, 5.610420841683366, 5.616032064128256, 5.621643286573146, 5.627254509018036, 5.632865731462926, 5.638476953907816, 5.644088176352705, 5.649699398797595, 5.655310621242485, 5.660921843687374, 5.666533066132264, 5.6721442885771545, 5.677755511022044, 5.683366733466934, 5.688977955911824, 5.694589178356713, 5.700200400801603, 5.705811623246493, 5.7114228456913825, 5.717034068136273, 5.722645290581163, 5.728256513026052, 5.733867735470942, 5.739478957915832, 5.745090180360721, 5.750701402805611, 5.7563126252505015, 5.761923847695391, 5.767535070140281, 5.77314629258517, 5.77875751503006, 5.78436873747495, 5.789979959919839, 5.7955911823647295, 5.801202404809619, 5.806813627254509, 5.812424849699399, 5.818036072144288, 5.823647294589178, 5.829258517034068, 5.8348697394789575, 5.840480961923848, 5.846092184368738, 5.851703406813627, 5.857314629258517, 5.862925851703407, 5.868537074148296, 5.874148296593186, 5.8797595190380765, 5.885370741482966, 5.890981963927856, 5.896593186372746, 5.902204408817635, 5.907815631262524, 5.913426853707415, 5.9190380761523045, 5.924649298597195, 5.930260521042084, 5.935871743486974, 5.941482965931863, 5.947094188376753, 5.952705410821643, 5.9583166332665325, 5.963927855711423, 5.969539078156313, 5.975150300601202, 5.980761523046092, 5.986372745490982, 5.991983967935871, 5.997595190380761, 6.0032064128256515, 6.008817635270541, 6.014428857715431, 6.020040080160321, 6.02565130260521, 6.0312625250501, 6.03687374749499, 6.0424849699398795, 6.048096192384769, 6.05370741482966, 6.059318637274549, 6.064929859719438, 6.070541082164329, 6.076152304609218, 6.0817635270541075, 6.087374749498998, 6.092985971943888, 6.098597194388778, 6.104208416833668, 6.109819639278557, 6.115430861723446, 6.121042084168336, 6.1266533066132265, 6.132264529058116, 6.137875751503006, 6.143486973947896, 6.149098196392785, 6.154709418837675, 6.160320641282565, 6.1659318637274545, 6.171543086172345, 6.177154308617235, 6.182765531062124, 6.188376753507014, 6.193987975951904, 6.199599198396793, 6.2052104208416825, 6.210821643286573, 6.216432865731463, 6.222044088176353, 6.227655310621243, 6.233266533066132, 6.238877755511021, 6.244488977955912, 6.2501002004008015, 6.255711422845691, 6.261322645290581, 6.266933867735471, 6.27254509018036, 6.27815631262525, 6.28376753507014, 6.2893787575150295, 6.29498997995992, 6.30060120240481, 6.306212424849699, 6.311823647294589, 6.317434869739479, 6.323046092184368, 6.328657314629258, 6.3342685370741485, 6.339879759519038, 6.345490981963928, 6.351102204408818, 6.356713426853707, 6.362324649298597, 6.367935871743487, 6.3735470941883765, 6.379158316633266, 6.384769539078157, 6.390380761523046, 6.395991983967935, 6.401603206412825, 6.407214428857715, 6.412825651302605, 6.4184368737474955, 6.424048096192385, 6.429659318637274, 6.435270541082164, 6.440881763527054, 6.446492985971943, 6.452104208416833, 6.4577154308617235, 6.463326653306613, 6.468937875751503, 6.474549098196393, 6.480160320641282, 6.485771543086172, 6.491382765531062, 6.4969939879759515, 6.502605210420842, 6.508216432865732, 6.513827655310621, 6.51943887775551, 6.525050100200401, 6.53066132264529, 6.5362725450901795, 6.5418837675350705, 6.54749498997996, 6.55310621242485, 6.55871743486974, 6.564328657314629, 6.569939879759518, 6.575551102204408, 6.5811623246492985, 6.586773547094188, 6.592384769539078, 6.597995991983968, 6.603607214428857, 6.609218436873748, 6.614829659318637, 6.6204408817635265, 6.626052104208417, 6.631663326653307, 6.637274549098196, 6.642885771543086, 6.648496993987976, 6.654108216432865, 6.6597194388777545, 6.6653306613226455, 6.670941883767535, 6.676553106212425, 6.682164328657315, 6.687775551102204, 6.693386773547094, 6.698997995991984, 6.7046092184368735, 6.710220440881763, 6.715831663326653, 6.721442885771543, 6.727054108216432, 6.732665330661323, 6.738276553106212, 6.7438877755511015, 6.7494989979959925, 6.755110220440882, 6.760721442885771, 6.766332665330661, 6.771943887775551, 6.77755511022044, 6.78316633266533, 6.7887775551102205, 6.79438877755511, 6.8])
+              .range(['#008000ff', '#018100ff', '#038200ff', '#048200ff', '#068300ff', '#078400ff', '#098500ff', '#0a8500ff', '#0c8600ff', '#0d8700ff', '#0f8800ff', '#108800ff', '#128900ff', '#148a00ff', '#158b00ff', '#178b00ff', '#188c00ff', '#1a8d00ff', '#1b8e00ff', '#1d8f00ff', '#1e8f00ff', '#209000ff', '#219100ff', '#239200ff', '#249200ff', '#269300ff', '#289400ff', '#299500ff', '#2b9500ff', '#2c9600ff', '#2e9700ff', '#2f9800ff', '#319900ff', '#329900ff', '#349a00ff', '#359b00ff', '#379c00ff', '#389c00ff', '#3a9d00ff', '#3c9e00ff', '#3d9f00ff', '#3f9f00ff', '#40a000ff', '#42a100ff', '#43a200ff', '#45a200ff', '#46a300ff', '#48a400ff', '#49a500ff', '#4ba600ff', '#4ca600ff', '#4ea700ff', '#50a800ff', '#51a900ff', '#53a900ff', '#54aa00ff', '#56ab00ff', '#57ac00ff', '#59ac00ff', '#5aad00ff', '#5cae00ff', '#5daf00ff', '#5fb000ff', '#60b000ff', '#62b100ff', '#64b200ff', '#65b300ff', '#67b300ff', '#68b400ff', '#6ab500ff', '#6bb600ff', '#6db600ff', '#6eb700ff', '#70b800ff', '#71b900ff', '#73b900ff', '#74ba00ff', '#76bb00ff', '#78bc00ff', '#79bd00ff', '#7bbd00ff', '#7cbe00ff', '#7ebf00ff', '#7fc000ff', '#81c000ff', '#82c100ff', '#84c200ff', '#85c300ff', '#87c300ff', '#88c400ff', '#8ac500ff', '#8cc600ff', '#8dc700ff', '#8fc700ff', '#90c800ff', '#92c900ff', '#93ca00ff', '#95ca00ff', '#96cb00ff', '#98cc00ff', '#99cd00ff', '#9bcd00ff', '#9cce00ff', '#9ecf00ff', '#a0d000ff', '#a1d000ff', '#a3d100ff', '#a4d200ff', '#a6d300ff', '#a7d400ff', '#a9d400ff', '#aad500ff', '#acd600ff', '#add700ff', '#afd700ff', '#b0d800ff', '#b2d900ff', '#b4da00ff', '#b5da00ff', '#b7db00ff', '#b8dc00ff', '#badd00ff', '#bbde00ff', '#bdde00ff', '#bedf00ff', '#c0e000ff', '#c1e100ff', '#c3e100ff', '#c5e200ff', '#c6e300ff', '#c8e400ff', '#c9e400ff', '#cbe500ff', '#cce600ff', '#cee700ff', '#cfe700ff', '#d1e800ff', '#d2e900ff', '#d4ea00ff', '#d5eb00ff', '#d7eb00ff', '#d9ec00ff', '#daed00ff', '#dcee00ff', '#ddee00ff', '#dfef00ff', '#e0f000ff', '#e2f100ff', '#e3f100ff', '#e5f200ff', '#e6f300ff', '#e8f400ff', '#e9f500ff', '#ebf500ff', '#edf600ff', '#eef700ff', '#f0f800ff', '#f1f800ff', '#f3f900ff', '#f4fa00ff', '#f6fb00ff', '#f7fb00ff', '#f9fc00ff', '#fafd00ff', '#fcfe00ff', '#fdfe00ff', '#ffff00ff', '#ffff00ff', '#ffff00ff', '#fffe00ff', '#fffe00ff', '#fffd00ff', '#fffc00ff', '#fffc00ff', '#fffb00ff', '#fffb00ff', '#fffa00ff', '#fffa00ff', '#fff900ff', '#fff900ff', '#fff800ff', '#fff800ff', '#fff700ff', '#fff600ff', '#fff600ff', '#fff500ff', '#fff500ff', '#fff400ff', '#fff400ff', '#fff300ff', '#fff300ff', '#fff200ff', '#fff200ff', '#fff100ff', '#fff000ff', '#fff000ff', '#ffef00ff', '#ffef00ff', '#ffee00ff', '#ffee00ff', '#ffed00ff', '#ffed00ff', '#ffec00ff', '#ffec00ff', '#ffeb00ff', '#ffea00ff', '#ffea00ff', '#ffe900ff', '#ffe900ff', '#ffe800ff', '#ffe800ff', '#ffe700ff', '#ffe700ff', '#ffe600ff', '#ffe600ff', '#ffe500ff', '#ffe500ff', '#ffe400ff', '#ffe300ff', '#ffe300ff', '#ffe200ff', '#ffe200ff', '#ffe100ff', '#ffe100ff', '#ffe000ff', '#ffe000ff', '#ffdf00ff', '#ffdf00ff', '#ffde00ff', '#ffdd00ff', '#ffdd00ff', '#ffdc00ff', '#ffdc00ff', '#ffdb00ff', '#ffdb00ff', '#ffda00ff', '#ffda00ff', '#ffd900ff', '#ffd900ff', '#ffd800ff', '#ffd700ff', '#ffd700ff', '#ffd600ff', '#ffd600ff', '#ffd500ff', '#ffd500ff', '#ffd400ff', '#ffd400ff', '#ffd300ff', '#ffd300ff', '#ffd200ff', '#ffd200ff', '#ffd100ff', '#ffd000ff', '#ffd000ff', '#ffcf00ff', '#ffcf00ff', '#ffce00ff', '#ffce00ff', '#ffcd00ff', '#ffcd00ff', '#ffcc00ff', '#ffcc00ff', '#ffcb00ff', '#ffca00ff', '#ffca00ff', '#ffc900ff', '#ffc900ff', '#ffc800ff', '#ffc800ff', '#ffc700ff', '#ffc700ff', '#ffc600ff', '#ffc600ff', '#ffc500ff', '#ffc400ff', '#ffc400ff', '#ffc300ff', '#ffc300ff', '#ffc200ff', '#ffc200ff', '#ffc100ff', '#ffc100ff', '#ffc000ff', '#ffc000ff', '#ffbf00ff', '#ffbe00ff', '#ffbe00ff', '#ffbd00ff', '#ffbd00ff', '#ffbc00ff', '#ffbc00ff', '#ffbb00ff', '#ffbb00ff', '#ffba00ff', '#ffba00ff', '#ffb900ff', '#ffb900ff', '#ffb800ff', '#ffb700ff', '#ffb700ff', '#ffb600ff', '#ffb600ff', '#ffb500ff', '#ffb500ff', '#ffb400ff', '#ffb400ff', '#ffb300ff', '#ffb300ff', '#ffb200ff', '#ffb100ff', '#ffb100ff', '#ffb000ff', '#ffb000ff', '#ffaf00ff', '#ffaf00ff', '#ffae00ff', '#ffae00ff', '#ffad00ff', '#ffad00ff', '#ffac00ff', '#ffab00ff', '#ffab00ff', '#ffaa00ff', '#ffaa00ff', '#ffa900ff', '#ffa900ff', '#ffa800ff', '#ffa800ff', '#ffa700ff', '#ffa700ff', '#ffa600ff', '#ffa600ff', '#ffa500ff', '#ffa400ff', '#ffa300ff', '#ffa200ff', '#ffa100ff', '#ffa000ff', '#ff9f00ff', '#ff9e00ff', '#ff9d00ff', '#ff9c00ff', '#ff9b00ff', '#ff9a00ff', '#ff9900ff', '#ff9800ff', '#ff9700ff', '#ff9600ff', '#ff9500ff', '#ff9400ff', '#ff9300ff', '#ff9200ff', '#ff9100ff', '#ff9000ff', '#ff8f00ff', '#ff8e00ff', '#ff8d00ff', '#ff8c00ff', '#ff8b00ff', '#ff8a00ff', '#ff8900ff', '#ff8800ff', '#ff8700ff', '#ff8600ff', '#ff8500ff', '#ff8400ff', '#ff8300ff', '#ff8200ff', '#ff8100ff', '#ff8000ff', '#ff7f00ff', '#ff7e00ff', '#ff7d00ff', '#ff7c00ff', '#ff7b00ff', '#ff7a00ff', '#ff7900ff', '#ff7800ff', '#ff7700ff', '#ff7600ff', '#ff7500ff', '#ff7400ff', '#ff7300ff', '#ff7200ff', '#ff7100ff', '#ff7000ff', '#ff6f00ff', '#ff6e00ff', '#ff6d00ff', '#ff6c00ff', '#ff6b00ff', '#ff6a00ff', '#ff6900ff', '#ff6800ff', '#ff6700ff', '#ff6600ff', '#ff6500ff', '#ff6400ff', '#ff6300ff', '#ff6200ff', '#ff6100ff', '#ff6000ff', '#ff5f00ff', '#ff5e00ff', '#ff5d00ff', '#ff5c00ff', '#ff5b00ff', '#ff5a00ff', '#ff5900ff', '#ff5800ff', '#ff5700ff', '#ff5600ff', '#ff5500ff', '#ff5400ff', '#ff5300ff', '#ff5200ff', '#ff5100ff', '#ff5000ff', '#ff4f00ff', '#ff4e00ff', '#ff4d00ff', '#ff4c00ff', '#ff4b00ff', '#ff4a00ff', '#ff4900ff', '#ff4800ff', '#ff4700ff', '#ff4600ff', '#ff4500ff', '#ff4400ff', '#ff4300ff', '#ff4200ff', '#ff4100ff', '#ff4000ff', '#ff3f00ff', '#ff3e00ff', '#ff3d00ff', '#ff3c00ff', '#ff3b00ff', '#ff3a00ff', '#ff3900ff', '#ff3800ff', '#ff3700ff', '#ff3600ff', '#ff3500ff', '#ff3400ff', '#ff3300ff', '#ff3200ff', '#ff3100ff', '#ff3000ff', '#ff2f00ff', '#ff2e00ff', '#ff2d00ff', '#ff2c00ff', '#ff2b00ff', '#ff2a00ff', '#ff2900ff', '#ff2800ff', '#ff2700ff', '#ff2600ff', '#ff2500ff', '#ff2400ff', '#ff2300ff', '#ff2200ff', '#ff2100ff', '#ff2000ff', '#ff1f00ff', '#ff1e00ff', '#ff1d00ff', '#ff1c00ff', '#ff1b00ff', '#ff1a00ff', '#ff1900ff', '#ff1800ff', '#ff1700ff', '#ff1600ff', '#ff1500ff', '#ff1400ff', '#ff1300ff', '#ff1200ff', '#ff1100ff', '#ff1000ff', '#ff0f00ff', '#ff0e00ff', '#ff0d00ff', '#ff0c00ff', '#ff0b00ff', '#ff0a00ff', '#ff0900ff', '#ff0800ff', '#ff0700ff', '#ff0600ff', '#ff0500ff', '#ff0400ff', '#ff0300ff', '#ff0200ff', '#ff0100ff', '#ff0000ff', '#ff0000ff']);
+    
+
+    color_map_3a5bc6231deeb7e0f8b5377c247bd732.x = d3.scale.linear()
+              .domain([4.0, 6.8])
+              .range([0, 450 - 50]);
+
+    color_map_3a5bc6231deeb7e0f8b5377c247bd732.legend = L.control({position: 'topright'});
+    color_map_3a5bc6231deeb7e0f8b5377c247bd732.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_3a5bc6231deeb7e0f8b5377c247bd732.legend.addTo(map_66fe39fd9e956b8da075b2eff01fb156);
+
+    color_map_3a5bc6231deeb7e0f8b5377c247bd732.xAxis = d3.svg.axis()
+        .scale(color_map_3a5bc6231deeb7e0f8b5377c247bd732.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([4.0, 4.933333333333334, 5.866666666666666, 6.799999999999999]);
+
+    color_map_3a5bc6231deeb7e0f8b5377c247bd732.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_3a5bc6231deeb7e0f8b5377c247bd732.g = color_map_3a5bc6231deeb7e0f8b5377c247bd732.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_3a5bc6231deeb7e0f8b5377c247bd732.g.selectAll("rect")
+        .data(color_map_3a5bc6231deeb7e0f8b5377c247bd732.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_3a5bc6231deeb7e0f8b5377c247bd732.x(color_map_3a5bc6231deeb7e0f8b5377c247bd732.color.domain()[i - 1]) : color_map_3a5bc6231deeb7e0f8b5377c247bd732.x.range()[0],
+            x1: i < color_map_3a5bc6231deeb7e0f8b5377c247bd732.color.domain().length ? color_map_3a5bc6231deeb7e0f8b5377c247bd732.x(color_map_3a5bc6231deeb7e0f8b5377c247bd732.color.domain()[i]) : color_map_3a5bc6231deeb7e0f8b5377c247bd732.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_3a5bc6231deeb7e0f8b5377c247bd732.g.call(color_map_3a5bc6231deeb7e0f8b5377c247bd732.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Magnitude (M)");
+</script>
+</html>
